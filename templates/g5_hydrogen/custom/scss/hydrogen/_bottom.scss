@@ -1,0 +1,52 @@
+#g-bottom {
+	padding: $section-padding 0;
+	background-color: $bottom-background;
+
+	@if $bottom-image {
+    	background: url($bottom-image) no-repeat scroll bottom;
+		min-height: 120px ;
+	}
+
+	color: $bottom-text-color;
+
+	a {
+		color: lighten($bottom-background, 50%);
+		&:hover {
+			color: $bottom-text-color;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $bottom-text-color;
+	}
+
+	.button {
+		background: $accent-color-2;
+		color: $bottom-text-color;
+		&:hover {
+			background: lighten($accent-color-2, 5%);
+		}
+		&:active {
+			background: darken($accent-color-2, 5%);
+		}
+	}
+
+	.g-social {
+		a {
+			background: darken($bottom-background, 6%);
+			border: none;
+			color: $bottom-text-color;
+			transition: background 0.2s;
+			&:hover {
+				background: lighten($bottom-background, 6%);
+			}
+		}
+	}
+}
+
+@media print {
+	#g-bottom {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

@@ -1,0 +1,51 @@
+#g-extension {
+	padding: $section-padding 0;
+	background-color: $extension-background;
+/*
+	@if $extension-image {
+    	background-image: url($extension-image);
+	}
+*/
+	color: $extension-text-color;
+
+	a {
+		color: lighten($extension-background, 50%);
+		&:hover {
+			color: $extension-text-color;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $extension-text-color;
+	}
+
+	.button {
+		background: $accent-color-2;
+		color: $extension-text-color;
+		&:hover {
+			background: lighten($accent-color-2, 5%);
+		}
+		&:active {
+			background: darken($accent-color-2, 5%);
+		}
+	}
+
+	.g-social {
+		a {
+			background: darken($extension-background, 6%);
+			border: none;
+			color: $extension-text-color;
+			transition: background 0.2s;
+			&:hover {
+				background: lighten($extension-background, 6%);
+			}
+		}
+	}
+}
+
+@media print {
+	#g-extension {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

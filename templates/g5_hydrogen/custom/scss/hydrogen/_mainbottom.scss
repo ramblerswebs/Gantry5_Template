@@ -1,0 +1,51 @@
+#g-mainbottom {
+	padding: $section-padding 0;
+	background-color: $mainbottom-background;
+/*
+	@if $mainbottom-image {
+    	background-image: url($mainbottom-image);
+	}
+*/
+	color: $mainbottom-text-color;
+
+	a {
+		color: lighten($mainbottom-background, 50%);
+		&:hover {
+			color: $mainbottom-text-color;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $mainbottom-text-color;
+	}
+
+	.button {
+		background: $accent-color-2;
+		color: $mainbottom-text-color;
+		&:hover {
+			background: lighten($accent-color-2, 5%);
+		}
+		&:active {
+			background: darken($accent-color-2, 5%);
+		}
+	}
+
+	.g-social {
+		a {
+			background: darken($mainbottom-background, 6%);
+			border: none;
+			color: $mainbottom-text-color;
+			transition: background 0.2s;
+			&:hover {
+				background: lighten($mainbottom-background, 6%);
+			}
+		}
+	}
+}
+
+@media print {
+	#g-mainbottom {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

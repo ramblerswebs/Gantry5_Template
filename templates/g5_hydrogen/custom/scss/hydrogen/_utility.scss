@@ -1,0 +1,51 @@
+#g-utility {
+	padding: $section-padding 0;
+	background-color: $utility-background;
+/*
+	@if $utility-image {
+    	background-image: url($utility-image);
+	}
+*/
+	color: $utility-text-color;
+
+	a {
+		color: lighten($utility-background, 50%);
+		&:hover {
+			color: $utility-text-color;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $utility-text-color;
+	}
+
+	.button {
+		background: $accent-color-2;
+		color: $utility-text-color;
+		&:hover {
+			background: lighten($accent-color-2, 5%);
+		}
+		&:active {
+			background: darken($accent-color-2, 5%);
+		}
+	}
+
+	.g-social {
+		a {
+			background: darken($utility-background, 6%);
+			border: none;
+			color: $utility-text-color;
+			transition: background 0.2s;
+			&:hover {
+				background: lighten($utility-background, 6%);
+			}
+		}
+	}
+}
+
+@media print {
+	#g-utility {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

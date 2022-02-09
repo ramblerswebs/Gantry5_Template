@@ -1,0 +1,73 @@
+version: 2
+
+preset:
+  image: 'gantry-admin://images/layouts/3-col.png'
+
+layout:
+  /top/:
+    - [position-top-a, position-top-b, position-top-c, position-top-d,position-top-e, position-top-f]
+
+  /header/:
+    - [position-header-a, position-header-b, position-header-c, position-header-d, position-header-e, position-header-f]
+
+  /navigation/:
+    - menu
+
+  /showcase/:
+    - [position-showcase-a , position-showcase-b , position-showcase-c , position-showcase-d , position-showcase-e, position-showcase-f]
+
+  /feature/:
+    - [position-feature-a, position-feature-b, position-feature-c, position-feature-d, position-feature-e, position-feature-f]
+
+  /utility/:
+    - [position-utility-a, position-utility-b, position-utility-c, position-utility-d, position-utility-e, position-utility-f]
+
+  /maintop/:
+    - [position-maintop-a, position-maintop-b, position-maintop-c, position-maintop-d, position-maintop-e, position-maintop-f]
+
+  /fullwidth/:
+    - position-full-width
+
+  /breadcrumb/:
+    - position-breadcrumb
+
+  /container-mainbody/:
+    -
+      - sidebar 25:
+         - position-sidebar-a
+      - main 50:
+          - [position-content-top-a, position-content-top-b, position-content-top-c]
+          - system-content
+          - [position-content-bottom-a, position-content-bottom-b, position-content-bottom-c]
+      - aside 25:
+         - [position-sidebar-b, position-sidebar-c]
+
+  /mainbottom/:
+    - [position-mainbottom-a, position-mainbottom-b, position-mainbottom-c, position-mainbottom-d, position-mainbottom-e, position-mainbottom-f]
+
+  /extension/:
+    - [position-extension-a, position-extension-b, position-extension-c, position-extension-d, position-extension-e, position-extension-f]
+
+  /bottom/:
+    - [position-bottom-a, position-bottom-b, position-bottom-c, position-bottom-d, position-bottom-e, position-bottom-f]
+
+  /footer/:
+    - [position-footer-a, position-footer-b, position-footer-c, position-footer-d, position-footer-e, position-footer-f]
+
+  /copyright/:
+    - [position-copyright-a, position-copyright-b, position-copyright-c, position-copyright-d, position-copyright-e, position-copyright-f]
+
+  /debug/:
+    - position-debug
+
+  offcanvas:
+    - mobile-menu
+
+structure:
+  sidebar:
+    subtype: aside
+    block:
+      fixed: 1
+  aside:
+    block:
+      fixed: 1

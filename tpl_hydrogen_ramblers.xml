@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" client="site" method="upgrade">
+	<name>Ramblers Hydrogen Template Extension</name>
+	<element>tpl_hydrogen_ramblers</element>
+	<author>Keith Grimes</author>
+	<description>Ramblers Hydrogen Template Extension</description>
+	<creationDate>December 2021</creationDate>
+	<copyright>Copyright (C) 2021 by Keith Grimes</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<homepage></homepage>
+	<authorEmail>webmaster@wiltsswindonramblers.org.uk</authorEmail>
+	<authorUrl></authorUrl>
+	<version>1.0.0</version>
+	<fileset>
+		<files folder="templates" target="templates">
+			<folder>g5_hydrogen</folder>
+		</files>
+	</fileset>
+</extension>

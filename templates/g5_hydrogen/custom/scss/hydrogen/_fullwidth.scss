@@ -1,0 +1,51 @@
+#g-fullwidth {
+	padding: $section-padding 0;
+	background-color: $fullwidth-background;
+/*
+	@if $fullwidth-image {
+    	background-image: url($fullwidth-image);
+	}
+*/
+	color: $fullwidth-text-color;
+
+	a {
+		color: lighten($fullwidth-background, 50%);
+		&:hover {
+			color: $fullwidth-text-color;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $fullwidth-text-color;
+	}
+
+	.button {
+		background: $accent-color-2;
+		color: $fullwidth-text-color;
+		&:hover {
+			background: lighten($accent-color-2, 5%);
+		}
+		&:active {
+			background: darken($accent-color-2, 5%);
+		}
+	}
+
+	.g-social {
+		a {
+			background: darken($fullwidth-background, 6%);
+			border: none;
+			color: $fullwidth-text-color;
+			transition: background 0.2s;
+			&:hover {
+				background: lighten($fullwidth-background, 6%);
+			}
+		}
+	}
+}
+
+@media print {
+	#g-fullwidth {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

@@ -1,0 +1,172 @@
+preset1:
+  image: 'gantry-admin://images/ramblers-preset.png'
+  description: Mintcake & Sunset
+  colors:
+    # mintCake:#9BC8AB;
+    # sunset:#F08050;
+    # granite:#404141;
+    # rosyCheeks:#F6B09D;
+    # sunrise:--#F9B104;
+    # cloudy:#FFFFFF;
+    - '#9BC8AB'
+    - '#F08050'
+
+  styles:
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+    menustyle:
+      text-color: '#ffffff'
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D' # rosy cheeks
+      sublevel-text-color: '#ffffff'
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D' #rosy cheeks
+    font:
+      family-default: 'Assistant'
+    accent:
+      color-1: '#439a86'
+      color-2: '#8f4dae'
+    header:
+      background: '#2a816d'
+      text-color: '#ffffff'
+    navigation:
+      background: '#9BC8AB' # Mintcake
+      text-color: '#ffffff'
+      activemenu-color: '#F08050' # Sunset
+      submenu-color: '#F08050'    # Sunset
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+
+preset2:
+  image: 'gantry-admin://images/ramblers-preset.png'
+  description: Granite & Sunset
+  colors:
+    - '#404141'
+    - '#F08050'
+
+  styles:
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+    menustyle:
+      text-color: '#ffffff'
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D' # rosy cheeks
+      sublevel-text-color: '#ffffff'
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D' #rosy cheeks
+    font:
+      family-default: 'Assistant'
+    accent:
+      color-1: '#439a86'
+      color-2: '#8f4dae'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    navigation:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+      activemenu-color: '#F08050' # Sunset
+      submenu-color: '#F08050'    # Sunset
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      image: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#ffffff'
+      text-color: '#666666'
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+

@@ -1,0 +1,51 @@
+#g-maintop {
+	padding: $section-padding 0;
+	background-color: $maintop-background;
+/*
+	@if $maintop-image {
+    	background-image: url($maintop-image);
+	}
+*/
+	color: $maintop-text-color;
+
+	a {
+		color: lighten($maintop-background, 50%);
+		&:hover {
+			color: $maintop-text-color;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $maintop-text-color;
+	}
+
+	.button {
+		background: $accent-color-2;
+		color: $maintop-text-color;
+		&:hover {
+			background: lighten($accent-color-2, 5%);
+		}
+		&:active {
+			background: darken($accent-color-2, 5%);
+		}
+	}
+
+	.g-social {
+		a {
+			background: darken($maintop-background, 6%);
+			border: none;
+			color: $maintop-text-color;
+			transition: background 0.2s;
+			&:hover {
+				background: lighten($maintop-background, 6%);
+			}
+		}
+	}
+}
+
+@media print {
+	#g-maintop {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

@@ -1,0 +1,52 @@
+#g-top {
+//  padding: $section-padding 0;
+	padding: 1.5rem 0 0 0;
+	background-color: $top-background;
+/*
+	@if $top-image {
+    	background-image: url($top-image);
+	}
+*/
+	color: $top-text-color;
+
+	a {
+		color: lighten($top-background, 50%);
+		&:hover {
+			color: $top-text-color;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $top-text-color;
+	}
+
+	.button {
+		background: $accent-color-2;
+		color: $top-text-color;
+		&:hover {
+			background: lighten($accent-color-2, 5%);
+		}
+		&:active {
+			background: darken($accent-color-2, 5%);
+		}
+	}
+
+	.g-social {
+		a {
+			background: darken($top-background, 6%);
+			border: none;
+			color: $top-text-color;
+			transition: background 0.2s;
+			&:hover {
+				background: lighten($top-background, 6%);
+			}
+		}
+	}
+}
+
+@media print {
+	#g-top {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}
