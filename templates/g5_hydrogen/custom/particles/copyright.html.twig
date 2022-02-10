@@ -1,0 +1,45 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set start_date = particle.date.start|trim in ['now', ''] ? 'now'|date('Y') : particle.date.start|e %}
+{% set end_date = particle.date.end|trim in ['now', ''] ? 'now'|date('Y') : particle.date.end|e %}
+
+{% block particle %}
+<div class="rfooter_particle {{ particle.css.class }}">
+    <div align="left">
+        {% if particle.mode == 'full' %}
+            <div class="footer">Copyright &copy; 
+            {% if start_date != end_date %}
+                {{ start_date|e }} - 
+            {% endif %}
+            {{ end_date|e }} {{ particle.text }}<br />
+            {% if particle.ramblerswebs %}
+                Hosted by <a href="http://www.ramblers-webs.org.uk/" target="_blank">www.ramblers-webs.org.uk</a>. Centrally funded hosting for Areas and Groups<br />
+            {% endif %}
+            The Ramblers' Association is a company limited by guarantee, registered in England and Wales. Company registration number: 4458492. Ramblers Charity England &amp; Wales No: 1093577 Scotland No: SC039799. <br />Registered office: 1 Clink Street, 3rd Floor, London, SE1 9DG</div>
+        {% elseif particle.mode == 'short' %}
+            <div class="footer" id='rafooter'>
+            <div>Ramblers Charity England &amp; Wales No: 1093577 Scotland No: SC039799</div><div>&copy; 
+            {% if start_date != end_date %}
+                {{ start_date|e }} - 
+            {% endif %}
+            {{ end_date|e }}</div>
+            {% if particle.ramblerswebs %}
+                <div>Hosted by <a href="http://www.ramblers-webs.org.uk/" target="_blank">www.ramblers-webs.org.uk</a></div>'
+            {% endif %}
+        {% else %} 
+            <div class="footer">Copyright &copy; 
+            {% if start_date != end_date %}
+                {{ start_date|e }} - 
+            {% endif %}
+            {{ end_date|e }} {{ particle.text }}<br /></div>
+            {% if particle.ramblerswebs %}
+                <div>Hosted by <a href="http://www.ramblers-webs.org.uk/" target="_blank">www.ramblers-webs.org.uk</a></div>
+            {% endif %}
+        {% endif %}
+
+        {% if particle.ramblersprivacy %}
+            <p><a href="http://www.ramblers.org.uk/technical-stuff/privacy-policy.aspx" target="_blank">Ramblers Privacy Policy</a></p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
