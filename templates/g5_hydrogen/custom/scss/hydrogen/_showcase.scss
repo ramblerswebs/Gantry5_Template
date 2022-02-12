@@ -1,36 +1,31 @@
-#g-utility {
+#g-showcase {
 	//padding: $section-padding 0;
-	padding: 10px 0 ;
-	background-color: $utility-background;
+	padding: 0 0;
+	background-color: $showcase-background;
 
 	border-bottom: 1px solid #ffffff;
 	box-shadow: 0 1px 0 #cecece, inset 0 2px 4px 0 rgba(0,0,0,0.1);
 
-	/*
-	@if $utility-image {
-    	background-image: url($utility-image);
+	@if $showcase-image {
+    	background-image: url($showcase-image);
 	}
-*/
-	color: $utility-text-color;
+	color: $showcase-text-color;
 
+	/*
 	a {
 		color: lighten($accent-color-1, 50%);
 		&:hover {
 			color: $accent-color-1;
 		}
 	}
-/*
+
 	h1, h2, h3, h4, h5, h6, strong {
-		color: $utility-text-color;
+		color: $showcase-text-color;
 	}
 */
-	.g-content {
-		margin: 0 ;
-		padding: 0 ;
-	}
 	.button {
 		background: $accent-color-2;
-		color: $utility-text-color;
+		color: $showcase-text-color;
 		&:hover {
 			background: lighten($accent-color-2, 5%);
 		}
@@ -41,19 +36,22 @@
 
 	.g-social {
 		a {
-			background: darken($utility-background, 6%);
+			background: darken($showcase-background, 6%);
 			border: none;
-			color: $utility-text-color;
+			color: $showcase-text-color;
 			transition: background 0.2s;
 			&:hover {
-				background: lighten($utility-background, 6%);
+				background: lighten($showcase-background, 6%);
 			}
 		}
+	}
+	.g-content {
+		margin: 0 0;
 	}
 }
 
 @media print {
-	#g-utility {
+	#g-showcase {
 		background: #fff !important;
 		color: #000 !important;
 	}

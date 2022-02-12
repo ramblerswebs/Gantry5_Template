@@ -1,24 +1,27 @@
 #g-maintop {
 	padding: $section-padding 0;
-	background-color: $maintop-background;
+	background: $maintop-background;
 /*
 	@if $maintop-image {
     	background-image: url($maintop-image);
 	}
 */
+	border-bottom: 1px solid #ffffff;
+	box-shadow: 0 1px 0 #cecece, inset 0 2px 4px 0 rgba(0,0,0,0.1);
 	color: $maintop-text-color;
-
+/*
 	a {
 		color: lighten($maintop-background, 50%);
 		&:hover {
 			color: $maintop-text-color;
 		}
 	}
-
+*/
+/*
 	h1, h2, h3, h4, h5, h6, strong {
 		color: $maintop-text-color;
 	}
-
+*/
 	.button {
 		background: $accent-color-2;
 		color: $maintop-text-color;

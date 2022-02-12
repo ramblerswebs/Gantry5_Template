@@ -1,13 +1,17 @@
 preset1:
-  image: 'gantry-admin://images/ramblers-preset.png'
+  image: 'gantry-admin://images/ramblers-mintcake-sunset.png'
   description: Mintcake & Sunset
   colors:
-    # mintCake:#9BC8AB;
-    # sunset:#F08050;
-    # granite:#404141;
-    # rosyCheeks:#F6B09D;
-    # sunrise:--#F9B104;
-    # cloudy:#FFFFFF;
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
     - '#9BC8AB'
     - '#F08050'
 
@@ -32,11 +36,11 @@ preset1:
     font:
       family-default: 'Assistant'
     accent:
-      color-1: '#439a86'
-      color-2: '#8f4dae'
+      color-1: '#F08050' # Sunset
+      color-2: '#F6B09D' # Rosy Cheeks
     header:
-      background: '#2a816d'
-      text-color: '#ffffff'
+      background: '#f2f2f2'
+      text-color: '#666666'
     navigation:
       background: '#9BC8AB' # Mintcake
       text-color: '#ffffff'
@@ -81,14 +85,14 @@ preset1:
       background: '#ffffff'
       text-color: '#666666'
     footer:
-      background: '#f2f2f2'
-      text-color: '#666666'
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
     offcanvas:
       background: '#354d59'
       text-color: '#ffffff'
 
 preset2:
-  image: 'gantry-admin://images/ramblers-preset.png'
+  image: 'gantry-admin://images/ramblers-granite-sunset.png'
   description: Granite & Sunset
   colors:
     - '#404141'
@@ -115,8 +119,8 @@ preset2:
     font:
       family-default: 'Assistant'
     accent:
-      color-1: '#439a86'
-      color-2: '#8f4dae'
+      color-1: '#439a86' # Mintcake
+      color-2: '#F9B104' # Sunrise
     header:
       background: '#f2f2f2'
       text-color: '#666666'
@@ -164,8 +168,8 @@ preset2:
       background: '#ffffff'
       text-color: '#666666'
     footer:
-      background: '#ffffff'
-      text-color: '#666666'
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
     offcanvas:
       background: '#354d59'
       text-color: '#ffffff'

@@ -1,0 +1,189 @@
+/* format tables */
+
+tr.highlightrow {
+    background-color: #cccccc;
+}
+
+div.item-page table {
+    border: 1px solid #ddd;
+}
+div.item-page table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    max-width: 100%;
+
+}
+table tr:first-child th, table tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
+    border-top: 0 none;
+}
+table tbody tr.cat-list-row1 {
+    background-color: #DDDDDD
+}
+table.category th a.hasTooltip {
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration:underline
+}
+
+table th {
+    border: 0 none;
+    font-weight: bold;
+}
+div.item-page table th, div.item-page table td {
+    border: 1px solid #ddd;
+    line-height: 1.5em;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+table th {
+    background-color: var(--lightgrey);
+
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+/* 2022 Branding */
+
+table.mintcake th {
+    background-color: var(--mintcake);
+    background-image: -moz-linear-gradient(center top , var(--mintcake), #FBC200);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.sunset th {
+    background-color: var(--sunset);
+    background-image: -moz-linear-gradient(center top , var(--sunset), #FBC200);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.granite th {
+    background-color: var(--granite);
+    background-image: -moz-linear-gradient(center top , var(--granite), #FBC200);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.rosycheeks th {
+    background-color: var(--rosycheeks);
+    background-image: -moz-linear-gradient(center top , var(--rosycheeks), #FBC200);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.sunrise th {
+    background-color: var(--sunrise);
+    background-image: -moz-linear-gradient(center top , var(--sunrise), #FBC200);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.cloudy th {
+    background-color: var(--cloudy);
+    background-image: -moz-linear-gradient(center top , var(--cloudy), #FBC200);
+    background-repeat: repeat-x;
+    color: #000000;
+}
+/* old colours */
+table.pantone0159 th {
+    background-color: var(--pantone0159);
+    background-image: -moz-linear-gradient(center top , var(--pantone0159), #E06614);
+    background-repeat: repeat-x;
+    color: #000000;
+}
+table.pantone0186 th {
+    background-color: var(--pantone0186);
+    background-image: -moz-linear-gradient(center top , var(--pantone0186), #F2224B);
+    background-repeat: repeat-x;
+    color: #000000;
+}
+table.pantone0555 th {
+    background-color: var(--pantone0555);
+    background-image: -moz-linear-gradient(center top , var(--pantone0555), #2B9163);
+    background-repeat: repeat-x;
+    color: #000000;
+}
+table.pantone0583 th {
+    background-color: var(--pantone0583);
+    background-image: -moz-linear-gradient(center top , var(--pantone0583), #C9D900);
+    background-repeat: repeat-x;
+    color: #000000;
+}
+table.pantone1815 th {
+    background-color: var(--pantone1815);
+    background-image: -moz-linear-gradient(center top , var(--pantone1815), #9F2F34);
+    background-repeat: repeat-x;
+    color: #000000;
+}
+table.pantone4485 th {
+    background-color: var(--pantone4485);
+    background-image: -moz-linear-gradient(center top , var(--pantone4485), #82682D);
+    background-repeat: repeat-x;
+    color: #000000;
+}
+table.pantone5565 th {
+    background-color: var(--pantone5565);
+    background-image: -moz-linear-gradient(center top , var(--pantone5565), #A3B8B0);
+    background-repeat: repeat-x;
+    color: #000000;
+}
+table.pantone7474 th {
+    background-color: var(--pantone7474);
+    background-image: -moz-linear-gradient(center top , var(--pantone7474), #00A5B7);
+    background-repeat: repeat-x;
+    color: #000000;
+}
+table.pantone0110white th {
+    background-color: var(--pantone0110);
+    background-image: -moz-linear-gradient(center top , var(--pantone0110), #FBC200);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.pantone0159white th {
+    background-color: var(--pantone0159);
+    background-image: -moz-linear-gradient(center top , var(--pantone0159), #E06614);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.pantone0186white th {
+    background-color: var(--pantone0186);
+    background-image: -moz-linear-gradient(center top , var(--pantone0186), #F2224B);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.pantone0555white th {
+    background-color: var(--pantone0555);
+    background-image: -moz-linear-gradient(center top , var(--pantone0555), #2B9163);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.pantone0583white th {
+    background-color: var(--pantone0583);
+    background-image: -moz-linear-gradient(center top , var(--pantone0583), #C9D900);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.pantone1815white th {
+    background-color: var(--pantone1815);
+    background-image: -moz-linear-gradient(center top , var(--pantone1815), #9F2F34);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.pantone4485white th {
+    background-color: var(--pantone4485);
+    background-image: -moz-linear-gradient(center top , var(--pantone4485), #82682D);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.pantone5565white th {
+    background-color: var(--pantone5565);
+    background-image: -moz-linear-gradient(center top , var(--pantone5565), #A3B8B0);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+table.pantone7474white th {
+    background-color: var(--pantone7474);
+    background-image: -moz-linear-gradient(center top , var(--pantone7474), #00A5B7);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+}
+

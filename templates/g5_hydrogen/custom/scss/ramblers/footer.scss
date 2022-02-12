@@ -1,0 +1,27 @@
+#g-footer {
+    width: 100%;
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-between; /* Safari 6.1+ */
+    display: flex;
+    justify-content:space-between;
+
+    .g-grid {
+        -webkit-box-shadow: 0 2px 0 $footer-text-color;
+        box-shadow: 0 2px 0 $footer-text-color;
+    }
+
+    a {
+        color: $footer-text-color ;
+        margin : 0;
+        padding: 0;
+    }
+
+    .g-title {
+        color: $footer-text-color;
+        -webkit-box-shadow: 0 1px 0 $footer-text-color;
+        box-shadow: 0 1px 0 $footer-text-color;
+    }
+    p {
+        margin: 0;
+    }
+}
