@@ -127,8 +127,8 @@ preset2:
     navigation:
       background: '#404141' # Granite
       text-color: '#ffffff'
-      activemenu-color: '#F08050' # Sunset
-      submenu-color: '#F08050'    # Sunset
+      activemenu-color: '#439a86' # Mintcake
+      submenu-color: '#439a86'    # Mintcake
       overlay: 'rgba(0, 0, 0, 0.4)'
     showcase:
       background: '#f2f2f2'
