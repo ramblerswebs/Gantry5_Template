@@ -33,13 +33,13 @@ layout:
 
   /container-mainbody/:
     -
-      - sidebar 25:
+      - sidebar1 25:
          - position-sidebar-a
       - main 50:
           - [position-content-top-a, position-content-top-b, position-content-top-c]
           - system-content
           - [position-content-bottom-a, position-content-bottom-b, position-content-bottom-c]
-      - aside 25:
+      - sidebar2 25:
          - [position-sidebar-b, position-sidebar-c]
 
   /mainbottom/:
@@ -64,10 +64,11 @@ layout:
     - mobile-menu
 
 structure:
-  sidebar:
+  sidebar1:
     subtype: aside
     block:
       fixed: 1
-  aside:
+  sidebar2:
+    subtype: aside
     block:
       fixed: 1
