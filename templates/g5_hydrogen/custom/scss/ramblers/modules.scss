@@ -11,6 +11,7 @@
     line-height: 25px;
     margin-bottom: 10px;
     -webkit-box-shadow: 0 1px 0 #ffffff;
+    box-shadow: 0 1px 0 #ffffff;
     font-weight: bolder;
 }
 
@@ -172,28 +173,28 @@ div.moduletable.ramod_heading7474 h2  {
 
 /* set heading colours */
 div.moduletable.ramod_heading.mintcake h2 {
-    background: var(--mintcake);
+    background: $mintcake;
 }
 div.moduletable.ramod_heading.sunset h2 {
-    background: var(--sunset);
+    background: $sunset;
 }
 div.moduletable.ramod_heading.granite h2 {
-    background: var(--granite);
+    background: $granite;
 }
 div.moduletable.ramod_heading.rosycheeks h2 {
-    background: var(--rosycheeks);
+    background: $rosycheeks;
 }
 div.moduletable.ramod_heading.sunrise h2 {
-    background: var(--sunrise);
+    background: $sunrise;
 }
 div.moduletable.ramod_heading.cloudy h2 {
-    background: var(--cloudy);
+    background: $cloudy;
 }
 div.moduletable.ramod_heading.midgrey h2 {
-    background: var(--midgrey);
+    background: $midgrey;
 }
 div.moduletable.ramod_heading.lightgrey h2 {
-    background: var(--lightgrey);
+    background: $lightgrey;
 }
 
 // Old Colours
@@ -229,28 +230,28 @@ div.moduletable.ramod_heading7474 h2 {
 /* outline set colours*/
 
 div.moduletable.ramod_outline.mintcake {
-    border-color: var(--mintcake);
+    border-color: $mintcake;
 }
 div.moduletable.ramod_outline.sunset {
-    border-color: var(--sunset);
+    border-color: $sunset;
 }
 div.moduletable.ramod_outline.granite {
-    border-color: var(--granite);
+    border-color: $granite;
 }
 div.moduletable.ramod_outline.rosycheeks {
-    border-color: var(--rosycheeks);
+    border-color: $rosycheeks;
 }
 div.moduletable.ramod_outline.sunrise {
-    border-color: var(--sunrise);
+    border-color: $sunrise;
 }
 div.moduletable.ramod_outline.cloudy {
-    border-color: var(--cloudy);
+    border-color: $cloudy;
 }
 div.moduletable.ramod_outline.midgrey {
-    border-color: var(--midgrey);
+    border-color: $midgrey;
 }
 div.moduletable.ramod_outline.lightgrey {
-    border-color: var(--lightgrey);
+    border-color: $lightgrey;
 }
 
 
@@ -283,28 +284,28 @@ div.moduletable.ramod_outline7474 {
 }
 
 div.moduletable.ramod_outline.mintcake h2 {
-    background: var(--mintcake);
+    background: $mintcake;
 }
 div.moduletable.ramod_outline.sunset h2 {
-    background: var(--sunset);
+    background: $sunset;
 }
 div.moduletable.ramod_outline.granite h2 {
-    background: var(--granite);
+    background: $granite;
 }
 div.moduletable.ramod_outline.rosycheeks h2 {
-    background: var(--rosycheeks);
+    background: $rosycheeks;
 }
 div.moduletable.ramod_outline.sunrise h2 {
-    background: var(--sunrise);
+    background: $sunrise;
 }
 div.moduletable.ramod_outline.cloudy h2 {
-    background: var(--cloudy);
+    background: $cloudy;
 }
 div.moduletable.ramod_outline.midgrey h2 {
-    background: var(--midgrey);
+    background: $midgrey;
 }
 div.moduletable.ramod_outline.lightgrey h2 {
-    background: var(--lightgrey);
+    background: $lightgrey;
 }
 
 
@@ -339,28 +340,28 @@ div.moduletable.ramod_outline7474 h2 {
 /* pantone set colours*/
 
 div.moduletable.ramod_full.mintcake, div.moduletable.ramod_full.mintcake h2 {
-    background: var(--mintcake);
+    background: $mintcake;
 }
 div.moduletable.ramod_full.sunset, div.moduletable.ramod_full.sunset h2 {
-    background: var(--sunset);
+    background: $sunset;
 }
 div.moduletable.ramod_full.granite, div.moduletable.ramod_full.granite h2 {
-    background: var(--granite);
+    background: $granite;
 }
 div.moduletable.ramod_full.rosycheeks, div.moduletable.ramod_full.rosycheeks h2 {
-    background: var(--rosycheeks);
+    background: $rosycheeks;
 }
 div.moduletable.ramod_full.sunrise, div.moduletable.ramod_full.sunrise h2 {
-    background: var(--sunrise);
+    background: $sunrise;
 }
 div.moduletable.ramod_full.cloudy, div.moduletable.ramod_full.cloudy h2 {
-    background: var(--cloudy);
+    background: $cloudy;
 }
 div.moduletable.ramod_full.midgrey, div.moduletable.ramod_full.midgrey h2 {
-    background: var(--midgrey);
+    background: $midgrey;
 }
 div.moduletable.ramod_full.lightgrey, div.moduletable.ramod_full.lightgrey h2 {
-    background: var(--lightgrey);
+    background: $lightgrey;
 }
 
 
@@ -393,28 +394,28 @@ div.moduletable.ramod_pantone7474, div.moduletable.ramod_pantone7474 h2 {
 }
 
 div.moduletable.ramod_full.mintcake  {
-    border-color: var(--mintcake);
+    border-color: $mintcake;
 }
 div.moduletable.ramod_full.sunset  {
-    border-color: var(--sunset);
+    border-color: $sunset;
 }
 div.moduletable.ramod_full.granite  {
-    border-color: var(--granite);
+    border-color: $granite;
 }
 div.moduletable.ramod_full.rosycheeks  {
-    border-color: var(--rosycheeks);
+    border-color: $rosycheeks;
 }
 div.moduletable.ramod_full.sunrise  {
-    border-color: var(--sunrise);
+    border-color: $sunrise;
 }
 div.moduletable.ramod_full.cloudy  {
-    border-color: var(--cloudy);
+    border-color: $cloudy;
 }
 div.moduletable.ramod_full.midgrey  {
-    border-color: var(--midgrey);
+    border-color: $midgrey;
 }
 div.moduletable.ramod_full.lightgrey  {
-    border-color: var(--lightgrey);
+    border-color: $lightgrey;
 }
 
 
@@ -449,11 +450,11 @@ div.moduletable.ramod_pantone7474  {
 div.moduletable.ramod_heading.graniteheader h2,
 div.moduletable.ramod_outline.graniteheader h2,
 div.moduletable.ramod_full.graniteheader h2{
-    color: var(--granite);
+    color: $granite;
 }
 
 div.moduletable.ramod_heading.granitetext div,
 div.moduletable.ramod_outline.granitetext div,
 div.moduletable.ramod_full.granitetext div{
-    color: var(--granite);
+    color: $granite;
 }

@@ -1,0 +1,19 @@
+#g-feature {
+	//padding: 1.5rem 0;
+	background: $feature-background;
+	color: $feature-text-color;
+	margin: 5px 0 5px 0 ;
+    padding: 0 0 0 0 ;
+
+	.g-content {
+		margin: 0;
+		padding: 5px;
+	}
+}
+
+@media print {
+	#g-feature {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

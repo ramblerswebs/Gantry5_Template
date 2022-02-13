@@ -1,7 +1,12 @@
 #g-copyright {
-	padding: $section-padding 0;
 	background-color: $copyright-background;
 	font-size: 0.9em !important ;
+    padding: 0;
+    margin: 0;
+
+    .g-content {
+        padding: 0;
+    }
 /*
 	@if $copyright-image {
     	background-image: url($copyright-image);

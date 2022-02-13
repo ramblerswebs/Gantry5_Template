@@ -1,4 +1,8 @@
 #g-footer {
+	background: $footer-background;
+	color: $footer-text-color;
+	border-top: 1px solid rgba(0,0,0,0.05);
+
     width: 100%;
     display: -webkit-flex; /* Safari */
     -webkit-justify-content: space-between; /* Safari 6.1+ */
@@ -24,4 +28,19 @@
     p {
         margin: 0;
     }
+
+
+	@include breakpoint(mobile-only) {
+		text-align: center;
+	}
+}
+
+@media print {
+	#g-footer {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}
+
+#g-footer {
 }

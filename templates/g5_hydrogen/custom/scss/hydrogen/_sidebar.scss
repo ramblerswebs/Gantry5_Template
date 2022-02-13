@@ -1,3 +1,7 @@
+#g-sidebar, #g-aside {
+	//padding: $section-padding 0;
+	color: $main-text-color;
+}
 aside#g-sidebar, aside#g-sidebar div.g-content {
     margin: 0px 0px 0px 10px;
     padding: 0px;
@@ -6,4 +10,11 @@ aside#g-sidebar, aside#g-sidebar div.g-content {
 aside#g-aside, aside#g-aside div.g-content {
     margin: 0px 0px 0px 10px;
     padding: 0px;
+}
+
+@media print {
+	#g-sidebar {
+		background: #fff !important;
+		color: #000 !important;
+	}
 }

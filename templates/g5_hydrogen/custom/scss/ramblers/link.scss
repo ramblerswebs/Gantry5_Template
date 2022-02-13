@@ -43,23 +43,23 @@ a.link-button,
 }
 
 .link-button.mintcake{
-    background-color:  var(--mintcake);
+    background-color:  $mintcake;
     background-image: none;
 }
 .link-button.sunset{
-    background-color:  var(--sunset);
+    background-color:  $sunset;
     background-image: none;
 }
 .link-button.granite{
-    background-color:  var(--granite);
+    background-color:  $granite;
     background-image: none;
 }
 .link-button.rosycheeks{
-    background-color:  var(--rosycheeks);
+    background-color:  $rosycheeks;
     background-image: none;
 }
 .link-button.sunrise{
-    background-color:  var(--sunrise);
+    background-color:  $sunrise;
     background-image: none;
 }
 .link-button.cloudy{
@@ -67,22 +67,22 @@ a.link-button,
 }
 
 .link-button.mintcake:hover {
-    background-color:  var(--sunrise);
+    background-color:  $sunrise;
 }
 .link-button.sunset:hover {
-    background-color:  var(--sunrise);
+    background-color:  $sunrise;
 }
 .link-button.granite:hover {
-    background-color:  var(--sunrise);
+    background-color:  $sunrise;
 }
 .link-button.rosycheeks:hover {
-    background-color:  var(--sunrise);
+    background-color:  $sunrise;
 }
 .link-button.sunrise:hover {
-    background-color:  var(--sunset);
+    background-color:  $sunset;
 }
 .link-button.cloudy:hover {
-    background-color:  var(--sunrise);
+    background-color:  $sunrise;
 }
 
 

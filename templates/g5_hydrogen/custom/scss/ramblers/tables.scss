@@ -40,7 +40,7 @@ div.item-page table th, div.item-page table td {
     vertical-align: top;
 }
 table th {
-    background-color: var(--lightgrey);
+    background-color: $lightgrey;
 
     background-repeat: repeat-x;
 /*    color: #FFFFFF; */
@@ -48,38 +48,38 @@ table th {
 /* 2022 Branding */
 
 table.mintcake th {
-    background-color: var(--mintcake);
-    background-image: -moz-linear-gradient(center top , var(--mintcake), #FBC200);
+    background-color: $mintcake;
+    background-image: -moz-linear-gradient(center top , $mintcake, #FBC200);
     background-repeat: repeat-x;
     color: #FFFFFF;
 }
 table.sunset th {
-    background-color: var(--sunset);
-    background-image: -moz-linear-gradient(center top , var(--sunset), #FBC200);
+    background-color: $sunset;
+    background-image: -moz-linear-gradient(center top , $sunset, #FBC200);
     background-repeat: repeat-x;
     color: #FFFFFF;
 }
 table.granite th {
-    background-color: var(--granite);
-    background-image: -moz-linear-gradient(center top , var(--granite), #FBC200);
+    background-color: $granite;
+    background-image: -moz-linear-gradient(center top , $granite, #FBC200);
     background-repeat: repeat-x;
     color: #FFFFFF;
 }
 table.rosycheeks th {
-    background-color: var(--rosycheeks);
-    background-image: -moz-linear-gradient(center top , var(--rosycheeks), #FBC200);
+    background-color: $rosycheeks;
+    background-image: -moz-linear-gradient(center top , $rosycheeks, #FBC200);
     background-repeat: repeat-x;
     color: #FFFFFF;
 }
 table.sunrise th {
-    background-color: var(--sunrise);
-    background-image: -moz-linear-gradient(center top , var(--sunrise), #FBC200);
+    background-color: $sunrise;
+    background-image: -moz-linear-gradient(center top , $sunrise, #FBC200);
     background-repeat: repeat-x;
     color: #FFFFFF;
 }
 table.cloudy th {
-    background-color: var(--cloudy);
-    background-image: -moz-linear-gradient(center top , var(--cloudy), #FBC200);
+    background-color: $cloudy;
+    background-image: -moz-linear-gradient(center top , $cloudy, #FBC200);
     background-repeat: repeat-x;
     color: #000000;
 }

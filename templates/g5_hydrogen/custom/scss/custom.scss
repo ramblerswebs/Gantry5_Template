@@ -1,21 +1,5 @@
 /* Change log                                                            */
 /*                                                                      */
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap');
-@import "dependencies";
-
-@import "ramblers/breadcrumb";
-@import "ramblers/copyright";
-@import "ramblers/feature";
-@import "ramblers/footer";
-@import "ramblers/header";
-@import "ramblers/icons";
-@import "ramblers/link";
-@import "ramblers/modules";
-@import "ramblers/nav";
-@import "ramblers/sidebar";
-@import "ramblers/tables";
-@import "ramblers/top";
-
 :root {
     /* Ramblers colours */
     /* 2021  */
@@ -36,12 +20,14 @@
     --pantone5565:#8BA69C;           
     --pantone7474:#007A87;           
 }
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap');
+@import "dependencies";
 
-/*
-body {
-    font-family:  'Assistant' ,arial, serif;
-}
-*/ 
+@import "ramblers/icons";
+@import "ramblers/link";
+@import "ramblers/modules";
+@import "ramblers/tables";
+
 
 p { font-size: 1.2em ;}
 
@@ -49,6 +35,13 @@ p { font-size: 1.2em ;}
     padding: 0px;
 }
 
+#rafooter {
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
 a:hover {
     text-decoration: underline;
 }
@@ -56,6 +49,7 @@ a:hover {
 .cancelled {
     color:var(--cancelled);
     text-decoration: line-through;
+}
 
 .preformat {
     background: none repeat scroll 0 0 #ffffd5;
@@ -73,7 +67,6 @@ a:hover {
 span#sgfooter {
     display: none;
 }
-/* Hide text */
 
 legend.hidelabeltxt {
     display: none;
@@ -85,12 +78,12 @@ legend.hidelabeltxt {
     padding: 0px;
 }
 
-
 @media only screen and (max-width: 768px){
     div#ramblersheader {
         background-image:none !important;
     }
 }
+
 div.ra_fullwidth {
     background-size:100% 100%;
     background-repeat: no-repeat;
@@ -104,15 +97,18 @@ div.ra_fullwidth {
         display: initial;
     }
 }
+
 /* Kunena forum user status*/
 div.userkunenalistempty {
     color: var(--pantone1815);
     font-weight: 900
 }
+
 div.userkunenalist {
     color: #000000;
 }
-ul.userkunenacatorgories li{
+
+ul.userkunenacatorgories li {
     color:   var(--pantone0555);
     list-style-type: square;
     font-weight: 800
@@ -121,4 +117,20 @@ ul.userkunenacatorgories li{
 .jsn-daterangepicker  {
     width: calc(50% - 44px);
 }
+section#g-top {
+    div.g-block div.g-content {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h2#ramblerssubtitle {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 160px ;
+        margin-right: 0px ;
+        padding: 0 0 0 0;
+    }
+    div#ramblersheader {
+        height: 100px ;
+    }
 }

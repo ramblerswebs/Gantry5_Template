@@ -1,0 +1,230 @@
+#g-navigation {
+    background: $navigation-background;
+    color: $navigation-text-color;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    .g-content {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .g-container {
+        position: relative;
+    }
+
+    a {
+        // color: lighten($sunset, 40%);
+        &:hover {
+            color: #ffffff;
+        }
+    }
+        
+    .g-social {
+        a {
+            background: darken($navigation-background, 6%);
+            border: none;
+            text-decoration: none;
+            color: $navigation-text-color;
+            transition: background 0.2s;
+
+            &:hover {
+                background: lighten($navigation-background, 6%);
+            }
+        }
+    }
+
+    .g-main-nav {
+        margin: -($content-padding + $content-margin);
+        @include main-nav-colors($navigation-background, $navigation-text-color, $main-background, $main-text-color);
+
+        .g-toplevel {
+            display: flex;
+            flex-flow: row wrap;
+            // justify-content: center;
+            -webkit-justify-content: center;
+            > li {
+                margin-left: 1.5rem;
+            }
+            margin: 5px auto 0px ;
+            /*	color: rgb(216, 216, 216); */
+            justify-content: left ;            
+        }
+    }
+    .g-main-nav .g-toplevel > li > .g-menu-item-container > .g-menu-item-content
+    {
+        text-align: left;
+        line-height: 21px; 
+    }
+    
+    .g-main-nav .g-toplevel > li > .g-menu-item-container
+    {
+        text-decoration: none; 
+        padding-top: 7px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        font-size: 1.2em;
+    } 
+
+    /* Define the structure of the selected menu item */
+    .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).g-selected
+    {
+        background: $navigation-submenu-color; 
+        border-radius: 4px;
+    }
+    .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).g-selected > .g-menu-item-container
+    {
+        color: black ; 
+        border-radius: 4px;
+    }
+    /* Define the structure of the selected menu item */
+    .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active
+    {  
+        background: $navigation-activemenu-color;
+        color: $navigation-text-color; 
+        border-radius: 4px ;
+        margin-left: 10px ;
+    } 
+
+    /* Define the structure of the selected menu item */
+    .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active > .g-menu-item-container
+    {  
+        background: $navigation-activemenu-color;
+        color: $navigation-text-color; 
+        border-radius: 4px ;
+        margin-left: 10px ;
+    } 
+    .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active.g-selected > .g-menu-item-container
+    {  
+        color: black; 
+    } 
+
+    .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active > .g-menu-item-container
+    {
+        background: $navigation-submenu-color;
+        color: $navigation-text-color; 
+        border-radius: 4px;
+    }
+    .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active.g-selected
+    {
+        background: $navigation-submenu-color;
+        border-radius: 4px;
+    }
+
+    /* Set the background colour of the dropdown menu */
+    .g-main-nav .g-dropdown {
+        background: $navigation-submenu-color;
+        border-radius: 4px;
+    }
+
+    @include main-nav-indicators($navigation-background, $navigation-text-color);
+
+    .search {
+        input {
+            color: $main-text-color;
+        }
+    }
+}
+
+.g-main-nav {
+    .g-standard {
+        .g-dropdown {
+            @extend %dropdown-column;
+        }
+    }
+
+    .g-toplevel {
+        font-weight: $font-weight-medium;
+
+        > li {
+
+            > .g-menu-item-container {
+                text-decoration: none;
+                padding: 1.2rem $content-padding;
+            }
+
+            > .g-menu-item-container {
+                > .g-menu-item-content {
+                    line-height: normal;
+                }
+            }
+        }
+
+        i {
+            opacity: 0.6;
+        }
+    }
+
+    .g-dropdown {
+        text-align: left;
+
+        .dir-rtl & {
+            text-align: right;
+        }
+    }
+
+    .g-sublevel {
+        > li {
+            > .g-menu-item-container {
+                padding: ($content-padding + $content-margin)/2 1rem;
+            }
+        }
+    }
+}
+
+// Hide on Mobile Menu Breakpoint
+@if $menu-hide-on-mobile == 1 {
+    @media only all and (max-width: $breakpoints-mobile-menu-breakpoint) {
+        [data-g-mobile-target] {
+            display: none;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    }
+}
+
+#g-navigation, #g-header {
+    .align-left {
+        .g-toplevel {
+            justify-content: flex-start;
+            -webkit-justify-content: flex-start;
+        }
+    }
+
+    .align-right {
+        .g-toplevel {
+            justify-content: flex-end;
+            -webkit-justify-content: flex-end;
+        }
+    }
+}
+
+// Subtitle
+.g-menu-item-subtitle {
+    opacity: 0.7;
+}
+
+// Nav Overlay
+.g-nav-overlay, .g-menu-overlay {
+    background: $navigation-overlay;
+}
+
+@media print {
+    #g-navigation {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}
+
+// Not sure if these work
+
+.gf-menu-toggle::after {
+    color: white;
+    content: "Menu";
+    float: left;
+}
+.gf-menu-toggle span {
+    margin-left: 10px;
+}
+
