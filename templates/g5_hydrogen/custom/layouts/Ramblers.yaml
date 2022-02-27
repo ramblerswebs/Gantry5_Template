@@ -10,6 +10,9 @@ layout:
   /header/:
     - [position-header-a, position-header-b, position-header-c, position-header-d, position-header-e, position-header-f]
 
+  /drawer/:
+    - [position-drawer]
+
   /navigation/:
     - menu
 
@@ -22,14 +25,14 @@ layout:
   /utility/:
     - [position-utility-a, position-utility-b, position-utility-c, position-utility-d, position-utility-e, position-utility-f]
 
+  /breadcrumb/:
+    - position-breadcrumb
+
   /maintop/:
     - [position-maintop-a, position-maintop-b, position-maintop-c, position-maintop-d, position-maintop-e, position-maintop-f]
 
   /fullwidth/:
     - position-full-width
-
-  /breadcrumb/:
-    - position-breadcrumb
 
   /container-mainbody/:
     -
@@ -59,6 +62,9 @@ layout:
 
   /debug/:
     - position-debug
+
+  /analytics/:
+    - position-analytics
 
   offcanvas:
     - mobile-menu

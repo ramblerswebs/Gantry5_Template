@@ -91,6 +91,7 @@ admin:
     section:
       - top
       - header
+      - drawer
       - navigation
       - showcase
       - feature
@@ -100,5 +101,6 @@ admin:
       - subfeature
       - main
       - footer
+      - analytics
     configuration:
       - breakpoints

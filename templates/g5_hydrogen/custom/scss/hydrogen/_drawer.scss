@@ -1,0 +1,52 @@
+#g-top {
+//  padding: $section-padding 0;
+	padding: 1.5rem 0 0 0;
+	background-color: $drawer-background;
+/*
+	@if $drawer-image {
+    	background-image: url($drawer-image);
+	}
+*/
+	color: $drawer-text-color;
+
+	a {
+		color: lighten($drawer-background, 50%);
+		&:hover {
+			color: $drawer-text-color;
+		}
+	}
+
+	h1, h2, h3, h4, h5, h6, strong {
+		color: $drawer-text-color;
+	}
+
+	.button {
+		background: $accent-color-2;
+		color: $drawer-text-color;
+		&:hover {
+			background: lighten($accent-color-2, 5%);
+		}
+		&:active {
+			background: darken($accent-color-2, 5%);
+		}
+	}
+
+	.g-social {
+		a {
+			background: darken($drawer-background, 6%);
+			border: none;
+			color: $drawer-text-color;
+			transition: background 0.2s;
+			&:hover {
+				background: lighten($drawer-background, 6%);
+			}
+		}
+	}
+}
+
+@media print {
+	#g-top {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}
