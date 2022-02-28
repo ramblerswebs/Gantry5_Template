@@ -26,4 +26,7 @@
 			<folder>scss</folder>
 		</files>
 	</fileset>
+	<updateservers>
+        <server type="extension" name="RA Hydrogen Customisation" priority="1">https://raw.githubusercontent.com/ramblerswebs/updates/master/updates/tpl_hydrogen_ramblers.xml</server>
+    </updateservers>
 </extension>
