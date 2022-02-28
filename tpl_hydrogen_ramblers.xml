@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="file" client="site" method="upgrade">
-	<name>Ramblers Hydrogen Template Extension</name>
+	<name>Hydrogen Template - Ramblers Customisation</name>
 	<element>tpl_hydrogen_ramblers</element>
 	<author>Keith Grimes</author>
 	<description>Ramblers Hydrogen Template Extension</description>
@@ -11,9 +11,19 @@
 	<authorEmail>webmaster@wiltsswindonramblers.org.uk</authorEmail>
 	<authorUrl></authorUrl>
 	<version>1.0.0</version>
+    <scriptfile>install.php</scriptfile>
 	<fileset>
-		<files folder="templates" target="templates">
-			<folder>g5_hydrogen</folder>
+		<files folder="templates/g5_hydrogen/admin/images" target="templates/g5_hydrogen/admin/images">
+			<file>ramblers-granite-sunset.png</file>
+			<file>ramblers-mintcake-sunset.png</file>
+		</files>
+		<files folder="templates/g5_hydrogen/custom" target="templates/g5_hydrogen/custom">
+			<folder>blueprints</folder>
+			<folder>engine</folder>
+			<folder>gantry</folder>
+			<folder>layouts</folder>
+			<folder>particles</folder>
+			<folder>scss</folder>
 		</files>
 	</fileset>
 </extension>
