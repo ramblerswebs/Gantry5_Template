@@ -96,6 +96,12 @@ preset1:
     offcanvas:
       background: '#354d59'
       text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
 
 preset2:
   image: 'gantry-admin://images/ramblers-granite-sunset.png'
@@ -185,4 +191,9 @@ preset2:
     offcanvas:
       background: '#354d59'
       text-color: '#ffffff'
-
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem

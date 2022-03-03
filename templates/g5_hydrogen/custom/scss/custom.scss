@@ -29,10 +29,16 @@
 @import "ramblers/tables";
 
 
-p { font-size: 1.25em ;}
+p { font-size: 1.2em ;}
 
 #g-main {
     padding: 0px;
+}
+
+#g-top {
+    h1#ramblerstitle {
+        margin-top: 0px;
+    }
 }
 
 #rafooter {
