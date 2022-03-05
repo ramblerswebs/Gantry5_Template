@@ -1,0 +1,26 @@
+version: 2
+
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+
+layout:
+  /top/:
+    - [position-top-a, position-top-b, position-top-c, position-top-d,position-top-e, position-top-f]
+
+  /header/:
+    - [position-header-a, position-header-b, position-header-c, position-header-d, position-header-e, position-header-f]
+
+  /navigation/:
+    - menu
+
+  /main/:
+    - system-content
+
+  /footer/:
+    - [position-footer-a, position-footer-b, position-footer-c, position-footer-d, position-footer-e, position-footer-f]
+
+  /copyright/:
+    - [position-copyright-a, position-copright-b, position-copyright-c, position-copyright-d, position-copyright-e, position-copyright-f]
+
+  offcanvas:
+    - mobile-menu
