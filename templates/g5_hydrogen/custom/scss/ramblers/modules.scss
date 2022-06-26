@@ -1,10 +1,13 @@
 /* Modules */
 
-.boldheader .moduletable h2.g-title {
-    font-weight:bold;
+.boldheader .moduletable {
+    h2.g-title, h3.g-title {
+        font-weight:bold;
+    }    
 }
 
-.moduletable h2.g-title {
+.moduletable {
+    h2.g-title, h3.g-title {
     font-size:140%;
     text-transform: none;
     text-shadow: none;
@@ -13,6 +16,7 @@
     -webkit-box-shadow: 0 1px 0 #ffffff;
     box-shadow: 0 1px 0 #ffffff;
     font-weight: bolder;
+    }
 }
 
 div.moduletable.ramod_full,
@@ -117,114 +121,153 @@ div.moduletable.ramod_outline7474 div {
     margin-right: 5px;
 }
 
-div.moduletable.ramod_full h2,
-div.moduletable.ramod_pantone0110 h2,
-div.moduletable.ramod_pantone0159 h2,
-div.moduletable.ramod_pantone0186 h2,
-div.moduletable.ramod_pantone0555 h2,
-div.moduletable.ramod_pantone0583 h2,
-div.moduletable.ramod_pantone1815 h2,
-div.moduletable.ramod_pantone4485 h2,
-div.moduletable.ramod_pantone5565 h2,
-div.moduletable.ramod_pantone7474 h2  {
-    margin: 0px 0px 0px;
-    padding: 5px 12px 5px;
-    border-radius: 5px 5px 0px 0px;
-    background: none;
-    box-shadow: 0 1px 0 #ffffff;
+div.moduletable.ramod_full,
+div.moduletable.ramod_pantone0110,
+div.moduletable.ramod_pantone0159,
+div.moduletable.ramod_pantone0186,
+div.moduletable.ramod_pantone0555,
+div.moduletable.ramod_pantone0583,
+div.moduletable.ramod_pantone1815,
+div.moduletable.ramod_pantone4485,
+div.moduletable.ramod_pantone5565,
+div.moduletable.ramod_pantone7474  {
+    h2, h3 {
+        margin: 0px 0px 0px;
+        padding: 5px 12px 5px;
+        border-radius: 5px 5px 0px 0px;
+        background: none;
+        box-shadow: 0 1px 0 #ffffff;    
+    }
 }
 
-div.moduletable.ramod_outline h2,
-div.moduletable.ramod_outline0110 h2,
-div.moduletable.ramod_outline0159 h2,
-div.moduletable.ramod_outline0186 h2,
-div.moduletable.ramod_outline0555 h2,
-div.moduletable.ramod_outline0583 h2,
-div.moduletable.ramod_outline1815 h2,
-div.moduletable.ramod_outline4485 h2,
-div.moduletable.ramod_outline5565 h2,
-div.moduletable.ramod_outline7474 h2  {
-
-    padding: 10px;
-    margin: 0px 0px 0px 0px;
-    border-radius: 5px 5px 0px 0px;
-    color: #FFFFFF;
-    background: none; 
-    box-shadow: 0 1px 0 #ffffff;
+div.moduletable.ramod_outline,
+div.moduletable.ramod_outline0110,
+div.moduletable.ramod_outline0159,
+div.moduletable.ramod_outline0186,
+div.moduletable.ramod_outline0555,
+div.moduletable.ramod_outline0583,
+div.moduletable.ramod_outline1815,
+div.moduletable.ramod_outline4485,
+div.moduletable.ramod_outline5565,
+div.moduletable.ramod_outline7474  {
+    h2, h3 {
+        padding: 10px;
+        margin: 0px 0px 0px 0px;
+        border-radius: 5px 5px 0px 0px;
+        color: #FFFFFF;
+        background: none; 
+        box-shadow: 0 1px 0 #ffffff;    
+    }
 }
-div.moduletable.ramod_heading h2,
-div.moduletable.ramod_heading0110 h2,
-div.moduletable.ramod_heading0159 h2,
-div.moduletable.ramod_heading0186 h2,
-div.moduletable.ramod_heading0555 h2,
-div.moduletable.ramod_heading0583 h2,
-div.moduletable.ramod_heading1815 h2,
-div.moduletable.ramod_heading4485 h2,
-div.moduletable.ramod_heading5565 h2,
-div.moduletable.ramod_heading7474 h2  {
-    margin: 0px 0px 0px;
-    padding: 5px 12px 5px;
-    border-radius: 5px 5px 5px 5px;
-    color: #FFFFFF;
-    background: none;
-    box-shadow: 0 1px 0 #ffffff;
+div.moduletable.ramod_heading,
+div.moduletable.ramod_heading0110,
+div.moduletable.ramod_heading0159,
+div.moduletable.ramod_heading0186,
+div.moduletable.ramod_heading0555,
+div.moduletable.ramod_heading0583,
+div.moduletable.ramod_heading1815,
+div.moduletable.ramod_heading4485,
+div.moduletable.ramod_heading5565,
+div.moduletable.ramod_heading7474  {
+    h2, h3 {
+        margin: 0px 0px 0px;
+        padding: 5px 12px 5px;
+        border-radius: 5px 5px 5px 5px;
+        color: #FFFFFF;
+        background: none;
+        box-shadow: 0 1px 0 #ffffff;
+    }
 }
 
 
 /* set heading colours */
-div.moduletable.ramod_heading.mintcake h2 {
-    background: $mintcake;
+div.moduletable.ramod_heading.mintcake {
+    h2, h3 {
+        background: $mintcake;
+    }
 }
-div.moduletable.ramod_heading.sunset h2 {
-    background: $sunset;
+div.moduletable.ramod_heading.sunset {
+    h2, h3 {
+        background: $sunset;
+    }
 }
-div.moduletable.ramod_heading.granite h2 {
-    background: $granite;
+div.moduletable.ramod_heading.granite {
+    h2, h3 {
+        background: $granite;
+    }
 }
-div.moduletable.ramod_heading.rosycheeks h2 {
-    background: $rosycheeks;
+div.moduletable.ramod_heading.rosycheeks {
+    h2, h3 {
+        background: $rosycheeks;
+    }
 }
-div.moduletable.ramod_heading.sunrise h2 {
-    background: $sunrise;
+div.moduletable.ramod_heading.sunrise {
+    h2, h3 {
+        background: $sunrise;
+    }
 }
-div.moduletable.ramod_heading.cloudy h2 {
-    background: $cloudy;
+div.moduletable.ramod_heading.cloudy {
+    h2, h3 {
+        background: $cloudy;
+    }
 }
-div.moduletable.ramod_heading.midgrey h2 {
-    background: $midgrey;
+div.moduletable.ramod_heading.midgrey {
+    h2, h3 {
+        background: $midgrey;
+    }
 }
-div.moduletable.ramod_heading.lightgrey h2 {
-    background: $lightgrey;
+div.moduletable.ramod_heading.lightgrey {
+    h2, h3 {
+        background: $lightgrey;
+    }
 }
 
 // Old Colours
 
-div.moduletable.ramod_heading0110 h2 {
-    background: var(--pantone0110);
+div.moduletable.ramod_heading0110 {
+    h2, h3 {
+        background: var(--pantone0110);
+    }
 }
-div.moduletable.ramod_heading0159 h2 {
-    background: var(--pantone0159);
+div.moduletable.ramod_heading0159 {
+    h2, h3 {
+        background: var(--pantone0159);
+    }
 }
-div.moduletable.ramod_heading0186 h2 {
-    background: var(--pantone0186);
+div.moduletable.ramod_heading0186 {
+    h2, h3 {
+        background: var(--pantone0186);
+    }
 }
-div.moduletable.ramod_heading0555 h2 {
-    background: var(--pantone0555);
+div.moduletable.ramod_heading0555 {
+    h2, h3 {
+        background: var(--pantone0555);
+    }
 }
-div.moduletable.ramod_heading0583 h2 {
-    background: var(--pantone0583);
+div.moduletable.ramod_heading0583 {
+    h2, h3 {
+        background: var(--pantone0583);
+    }
 }
-div.moduletable.ramod_heading1815 h2 {
-    background: var(--pantone1815);
+div.moduletable.ramod_heading1815 {
+    h2, h3 {
+        background: var(--pantone1815);
+    }
 }
-div.moduletable.ramod_heading4485 h2 {
-    background: var(--pantone4485);
+div.moduletable.ramod_heading4485 {
+    h2, h3 {
+        background: var(--pantone4485);
+    }
 }
-div.moduletable.ramod_heading5565 h2 {
-    background: var(--pantone5565);
+div.moduletable.ramod_heading5565 {
+    h2, h3 {
+        background: var(--pantone05565);
+    }
 }
-div.moduletable.ramod_heading7474 h2 {
-    background: var(--pantone7474);
+div.moduletable.ramod_heading7474 {
+    h2, h3 {
+        background: var(--pantone7474);
+    }
 }
 
 /* outline set colours*/
@@ -283,113 +326,206 @@ div.moduletable.ramod_outline7474 {
     border-color: var(--pantone7474);
 }
 
-div.moduletable.ramod_outline.mintcake h2 {
-    background: $mintcake;
+div.moduletable.ramod_outline.mintcake {
+    h2, h3 {
+        background: $mintcake;
+    }
 }
-div.moduletable.ramod_outline.sunset h2 {
-    background: $sunset;
+div.moduletable.ramod_outline.sunset {
+    h2, h3 {
+        background: $sunset;
+    }
 }
-div.moduletable.ramod_outline.granite h2 {
-    background: $granite;
+div.moduletable.ramod_outline.granite {
+    h2, h3 {
+        background: $granite;
+    }
 }
-div.moduletable.ramod_outline.rosycheeks h2 {
-    background: $rosycheeks;
+div.moduletable.ramod_outline.rosycheeks {
+    h2, h3 {
+        background: $rosycheeks;
+    }
 }
-div.moduletable.ramod_outline.sunrise h2 {
-    background: $sunrise;
+div.moduletable.ramod_outline.sunrise {
+    h2, h3 {
+        background: $sunrise;
+    }
 }
-div.moduletable.ramod_outline.cloudy h2 {
-    background: $cloudy;
+div.moduletable.ramod_outline.cloudy {
+    h2, h3 {
+        background: $cloudy;
+    }
 }
-div.moduletable.ramod_outline.midgrey h2 {
-    background: $midgrey;
+div.moduletable.ramod_outline.midgrey {
+    h2, h3 {
+        background: $midgrey;
+    }
 }
-div.moduletable.ramod_outline.lightgrey h2 {
-    background: $lightgrey;
+div.moduletable.ramod_outline.lightgrey {
+    h2, h3 {
+        background: $lightgrey;
+    }
 }
 
 
-div.moduletable.ramod_outline0110 h2 {
-    background: var(--pantone0110);
+div.moduletable.ramod_outline0110 {
+    h2, h3 {
+        background: var(--pantone0110);
+    }
 }
-div.moduletable.ramod_outline0159 h2 {
-    background: var(--pantone0159);
+div.moduletable.ramod_outline0159 {
+    h2, h3 {
+        background: var(--pantone0159);
+    }
 }
-div.moduletable.ramod_outline0186 h2 {
-    background: var(--pantone0186);
+div.moduletable.ramod_outline0186 {
+    h2, h3 {
+        background: var(--pantone0186);
+    }
 }
-div.moduletable.ramod_outline0555 h2 {
-    background: var(--pantone0555);
+div.moduletable.ramod_outline0555 {
+    h2, h3 {
+        background: var(--pantone0555);
+    }
 }
-div.moduletable.ramod_outline0583 h2 {
-    background: var(--pantone0583);
+div.moduletable.ramod_outline0583 {
+    h2, h3 {
+        background: var(--pantone0583);
+    }
 }
-div.moduletable.ramod_outline1815 h2 {
-    background: var(--pantone1815);
+div.moduletable.ramod_outline1815 {
+    h2, h3 {
+        background: var(--pantone1815);
+    }
 }
-div.moduletable.ramod_outline4485 h2 {
-    background: var(--pantone4485);
+div.moduletable.ramod_outline4485 {
+    h2, h3 {
+        background: var(--pantone4485);
+    }
 }
-div.moduletable.ramod_outline5565 h2 {
-    background: var(--pantone5565);
+div.moduletable.ramod_outline5565 {
+    h2, h3 {
+        background: var(--pantone5565);
+    }
 }
-div.moduletable.ramod_outline7474 h2 {
-    background: var(--pantone7474);
+div.moduletable.ramod_outline7474 {
+    h2, h3 {
+        background: var(--pantone7474);
+    }
 }
 
 /* pantone set colours*/
 
-div.moduletable.ramod_full.mintcake, div.moduletable.ramod_full.mintcake h2 {
+div.moduletable.ramod_full.mintcake, 
+div.moduletable.ramod_full.mintcake h2,
+div.moduletable.ramod_full.mintcake h3
+{
     background: $mintcake;
 }
-div.moduletable.ramod_full.sunset, div.moduletable.ramod_full.sunset h2 {
+div.moduletable.ramod_full.sunset,
+div.moduletable.ramod_full.sunset h2,
+div.moduletable.ramod_full.sunset h3
+{
     background: $sunset;
 }
-div.moduletable.ramod_full.granite, div.moduletable.ramod_full.granite h2 {
+div.moduletable.ramod_full.granite, 
+div.moduletable.ramod_full.granite h2, 
+div.moduletable.ramod_full.granite h3
+{
     background: $granite;
 }
-div.moduletable.ramod_full.rosycheeks, div.moduletable.ramod_full.rosycheeks h2 {
+div.moduletable.ramod_full.rosycheeks,
+div.moduletable.ramod_full.rosycheeks h2, 
+div.moduletable.ramod_full.rosycheeks h3 
+{
     background: $rosycheeks;
 }
-div.moduletable.ramod_full.sunrise, div.moduletable.ramod_full.sunrise h2 {
+div.moduletable.ramod_full.sunrise,
+div.moduletable.ramod_full.sunrise h2,
+div.moduletable.ramod_full.sunrise h3 
+{
     background: $sunrise;
 }
-div.moduletable.ramod_full.cloudy, div.moduletable.ramod_full.cloudy h2 {
+div.moduletable.ramod_full.cloudy,
+div.moduletable.ramod_full.cloudy h2, 
+div.moduletable.ramod_full.cloudy h3 
+{
     background: $cloudy;
 }
-div.moduletable.ramod_full.midgrey, div.moduletable.ramod_full.midgrey h2 {
+
+div.moduletable.ramod_full.midgrey, 
+div.moduletable.ramod_full.midgrey h2,
+div.moduletable.ramod_full.midgrey h3 
+{
     background: $midgrey;
 }
-div.moduletable.ramod_full.lightgrey, div.moduletable.ramod_full.lightgrey h2 {
+
+div.moduletable.ramod_full.lightgrey,
+div.moduletable.ramod_full.lightgrey h2, 
+div.moduletable.ramod_full.lightgrey h3 
+{
     background: $lightgrey;
 }
 
 
-div.moduletable.ramod_pantone0110, div.moduletable.ramod_pantone0110 h2 {
+div.moduletable.ramod_pantone0110,
+div.moduletable.ramod_pantone0110 h2,
+div.moduletable.ramod_pantone0110 h3
+{
     background: var(--pantone0110);
 }
-div.moduletable.ramod_pantone0159, div.moduletable.ramod_pantone0159 h2 {
+div.moduletable.ramod_pantone0159, 
+div.moduletable.ramod_pantone0159 h2,
+div.moduletable.ramod_pantone0159 h3
+{
     background: var(--pantone0159);
 }
-div.moduletable.ramod_pantone0186, div.moduletable.ramod_pantone0186 h2 {
+
+div.moduletable.ramod_pantone0186, 
+div.moduletable.ramod_pantone0186 h2,
+div.moduletable.ramod_pantone0186 h3 
+{
     background: var(--pantone0186);
 }
-div.moduletable.ramod_pantone0555, div.moduletable.ramod_pantone0555 h2 {
+
+div.moduletable.ramod_pantone0555,
+div.moduletable.ramod_pantone0555 h2, 
+div.moduletable.ramod_pantone0555 h3 
+{
     background: var(--pantone0555);
 }
-div.moduletable.ramod_pantone0583, div.moduletable.ramod_pantone0583 h2 {
+
+div.moduletable.ramod_pantone0583, 
+div.moduletable.ramod_pantone0583 h2, 
+div.moduletable.ramod_pantone0583 h3  
+{
     background: var(--pantone0583);
 }
-div.moduletable.ramod_pantone1815, div.moduletable.ramod_pantone1815 h2 {
+div.moduletable.ramod_pantone1815, 
+div.moduletable.ramod_pantone1815 h2, 
+div.moduletable.ramod_pantone1815 h3 
+{
     background: var(--pantone1815);
 }
-div.moduletable.ramod_pantone4485, div.moduletable.ramod_pantone4485 h2 {
+
+div.moduletable.ramod_pantone4485, 
+div.moduletable.ramod_pantone4485 h2, 
+div.moduletable.ramod_pantone4485 h3 
+{
     background: var(--pantone4485);
 }
-div.moduletable.ramod_pantone5565, div.moduletable.ramod_pantone5565 h2 {
+
+div.moduletable.ramod_pantone5565, 
+div.moduletable.ramod_pantone5565 h2,
+div.moduletable.ramod_pantone5565 h3
+{
     background: var(--pantone5565);
 }
-div.moduletable.ramod_pantone7474, div.moduletable.ramod_pantone7474 h2 {
+
+div.moduletable.ramod_pantone7474, 
+div.moduletable.ramod_pantone7474 h2, 
+div.moduletable.ramod_pantone7474 h3 
+{
     background: var(--pantone7474);
 }
 
@@ -447,10 +583,13 @@ div.moduletable.ramod_pantone7474  {
     border-color: var(--pantone7474);
 }
 
-div.moduletable.ramod_heading.graniteheader h2,
-div.moduletable.ramod_outline.graniteheader h2,
-div.moduletable.ramod_full.graniteheader h2{
-    color: $granite;
+div.moduletable.ramod_heading.graniteheader ,
+div.moduletable.ramod_outline.graniteheader ,
+div.moduletable.ramod_full.graniteheader 
+{
+    h2, h3 {
+        color: $granite;
+    }
 }
 
 div.moduletable.ramod_heading.granitetext div,
