@@ -46,7 +46,7 @@ preset1:
       text-color: '#666666'
     navigation:
       background: '#9BC8AB' # Mintcake
-      text-color: '#ffffff'
+      text-color: '#000000' # Black
       activemenu-color: '#F08050' # Sunset
       submenu-color: '#F08050'    # Sunset
       overlay: 'rgba(0, 0, 0, 0.4)'
