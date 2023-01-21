@@ -6,12 +6,13 @@
     z-index: 2;
 
     .g-content {
-        margin-top: 10px;
-        margin-bottom: 15px;
+        margin-top: .75em;
+        margin-bottom: .75rem;
     }
 
     .g-menu-item-title {
         font-weight: bold;
+        font-size: $navigation-font-size;
     }
 
     .g-container {
@@ -44,14 +45,17 @@
         @include main-nav-colors($navigation-background, $navigation-text-color, $main-background, $main-text-color);
 
         .g-toplevel {
-            display: flex;
+            display: block;
             flex-flow: row wrap;
             // justify-content: center;
             -webkit-justify-content: center;
             > li {
-                margin-left: 1.5rem;
+                margin-left: 0.5rem;
+                float: left;
+                margin-top: 5px;
+                margin-bottom: 5px;
             }
-            margin: 5px auto 0px ;
+            margin: 0 auto 0 ;
             /*	color: rgb(216, 216, 216); */
             justify-content: left ;            
         }
@@ -59,16 +63,16 @@
     .g-main-nav .g-toplevel > li > .g-menu-item-container > .g-menu-item-content
     {
         text-align: left;
-        line-height: 21px; 
+        line-height: 1rem; 
     }
     
     .g-main-nav .g-toplevel > li > .g-menu-item-container
     {
         text-decoration: none; 
-        padding-top: 7px;
-        padding-bottom: 10px;
+        padding-top: .5rem;
+        padding-bottom: .75rem;
         //padding-right: 15px;
-        font-size: 1.2em;
+        font-size: $navigation-font-size;
     } 
 
     /* Define the structure of the selected menu item */

@@ -13,6 +13,10 @@ form:
       type: input.colorpicker
       label: Text
       default: "#ffffff"
+    font-size:
+      type: input.text
+      label: Font Size
+      default: "1.2rem"
     submenu-color:
       type: input.colorpicker
       label: Sub Menu

@@ -44,6 +44,13 @@
 	}
 }
 
+@media only all and (max-width: $breakpoints-mobile-menu-breakpoint) {
+// remove the subtitle on a mobile device as it does not render correctly. 
+	#ramblerssubtitle {
+		display: none;		
+	}
+}
+
 @media print {
 	#g-top {
 		background: #fff !important;

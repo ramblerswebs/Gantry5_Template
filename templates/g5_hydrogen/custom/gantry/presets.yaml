@@ -48,6 +48,7 @@ preset1:
       background: '#9BC8AB' # Mintcake
       text-color: '#000000' # Black
       activemenu-color: '#F08050' # Sunset
+      font-size: '1rem'
       submenu-color: '#F08050'    # Sunset
       overlay: 'rgba(0, 0, 0, 0.4)'
     showcase:
@@ -142,6 +143,7 @@ preset2:
     navigation:
       background: '#404141' # Granite
       text-color: '#ffffff'
+      font-size: '1rem'
       activemenu-color: '#439a86' # Mintcake
       submenu-color: '#439a86'    # Mintcake
       overlay: 'rgba(0, 0, 0, 0.4)'
