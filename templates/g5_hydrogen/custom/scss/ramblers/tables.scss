@@ -24,13 +24,20 @@ table tbody tr.cat-list-row1 {
 }
 table.category th a.hasTooltip {
     font-weight: bold;
-    color: #FFFFFF;
+    color: $navigation-text-color;
     text-decoration:underline
 }
 
-table th {
+table thead {
+    background-color: $navigation-background;
+}
+
+table thead th {
     border: 0 none;
     font-weight: bold;
+    a {
+        color:#000000;
+    }
 }
 div.item-page table th, div.item-page table td {
     border: 1px solid #ddd;
@@ -39,7 +46,7 @@ div.item-page table th, div.item-page table td {
     text-align: left;
     vertical-align: top;
 }
-table th {
+table thead th {
     background-color: $lightgrey;
 
     background-repeat: repeat-x;
