@@ -7,7 +7,7 @@
 
     .g-content {
         margin-top: .75em;
-        margin-bottom: .75rem;
+        margin-bottom: 0;
     }
 
     .g-menu-item-title {
@@ -50,10 +50,9 @@
             // justify-content: center;
             -webkit-justify-content: center;
             > li {
-                margin-left: 0.5rem;
+                margin-top: 2px;
+                margin-right: 5px; 
                 float: left;
-                margin-top: 5px;
-                margin-bottom: 5px;
             }
             margin: 0 auto 0 ;
             /*	color: rgb(216, 216, 216); */
@@ -69,8 +68,9 @@
     .g-main-nav .g-toplevel > li > .g-menu-item-container
     {
         text-decoration: none; 
-        padding-top: .5rem;
-        padding-bottom: .75rem;
+        padding: 7px 10px 7px 8px;
+        //padding-top: .5rem;
+        //padding-bottom: .75rem;
         //padding-right: 15px;
         font-size: $navigation-font-size;
     } 
@@ -83,25 +83,25 @@
     }
     .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).g-selected > .g-menu-item-container
     {
-        color: black ; 
+        color: $navigation-activemenu-color ; 
         border-radius: 4px;
     }
     /* Define the structure of the selected menu item */
     .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active
     {  
-        background: $navigation-activemenu-color;
+        //background: $navigation-activemenu-color;
         color: $navigation-text-color; 
         border-radius: 4px ;
-        margin-left: 10px ;
+        //margin-left: 10px ;
     } 
 
     /* Define the structure of the selected menu item */
     .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active > .g-menu-item-container
     {  
-        background: $navigation-activemenu-color;
+        //background: $navigation-activemenu-color;
         color: $navigation-text-color; 
         border-radius: 4px ;
-        margin-left: 10px ;
+        //margin-left: 10px ;
     } 
     .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active.g-selected > .g-menu-item-container
     {  

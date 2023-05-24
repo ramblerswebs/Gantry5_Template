@@ -16,17 +16,17 @@ form:
     font-size:
       type: input.text
       label: Font Size
-      default: "1.2rem"
+      default: "15px"
     submenu-color:
       type: input.colorpicker
-      label: Sub Menu
+      label: Menu Color
       default: "#ffffff"
     activemenu-color:
       type: input.colorpicker
-      label: Active Menu
       default: "#ffffff"
-    overlay:
-      type: input.colorpicker
-      label: Overlay
-      description: Set the color of the page overlay when the certain menu modes are active.
-      default: "rgba(0, 0, 0, 0.4)"
+      label: Active Menu
+#    overlay:
+#      type: input.colorpicker
+#      label: Overlay
+#      description: Set the color of the page overlay when the certain menu modes are active.
+#      default: "rgba(0, 0, 0, 0.4)"

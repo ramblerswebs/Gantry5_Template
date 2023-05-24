@@ -89,17 +89,18 @@ admin:
       - base
       - accent
     section:
-#      - top
-#      - header
-#      - drawer
+      - top
+      - header
+      - drawer
       - navigation
-#      - showcase
-#      - feature
-#      - utility
-#      - fullwidth
-#      - maintop
-#      - subfeature
-#      - main
-#      - footer
+      - showcase
+      - feature
+      - utility
+      - maintop
+      - fullwidth
+      - subfeature
+      - main
+      - footer
+      - analytics
     configuration:
       - breakpoints

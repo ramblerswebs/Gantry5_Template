@@ -29,8 +29,19 @@
 @import "ramblers/tables";
 @import "ramblers/raheader";
 
+body {
+    font-size: $main-font-size;
+}
 
-p { font-size: 1.2em ;}
+h2 {
+    font-size: 140%;
+}
+
+h3 {
+    font-size: 175%;
+}
+
+//p { font-size: 1.2em ;}
 
 #g-main {
     padding: 0px;
@@ -146,3 +157,8 @@ section#g-top {
     }
 }
 
+.button
+{
+    @include main-nav-colors($navigation-background, $navigation-text-color, $main-background, $main-text-color);
+    color: $navigation-text-color;
+}

@@ -1,6 +1,6 @@
 preset1:
-  image: 'gantry-admin://images/ramblers-mintcake-sunset.png'
-  description: Mintcake & Sunset
+  image: 'gantry-admin://images/ramblers-granite.png'
+  description: Granite
   colors:
     # mintCake:       #9BC8AB;
     # sunset:         #F08050;
@@ -12,45 +12,786 @@ preset1:
     # cancelled:      #C60C30;
     # lightgrey:      #C0C0C0;
     # midgrey:        #808080;
-    - '#9BC8AB'
-    - '#F08050'
+    - '#404141'       #mintcake
 
   styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # White
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # white
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#404141'           # Granite - Main Menu Background
+      text-color: '#FFFFFF'           # white
+      activemenu-color: '#F08050'     # Sunset
+      font-size: '15px'
+      submenu-color: '#404141'        # Granite - Submenu background
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#404141' # Granite - Links etc
+      color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
       text-color: '#666666'
     drawer:
       background: '#ffffff'
       text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+preset2:
+  image: 'gantry-admin://images/ramblers-cloudy.png'
+  description: Cloudy
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#FFFFFF'       #cloudy
+
+  styles:
     base:
       background: '#f2f2f2'   # Off white
       text-color: '#666666'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
     menustyle:
-      text-color: '#ffffff'
+      text-color: '#404141'                           # Granite
       text-color-alt: '#8e9dab'
       text-color-active: 'rgba(255,255,255, 0.7)'
-      background-active: '#F6B09D' # rosy cheeks
-      sublevel-text-color: '#ffffff'
-      sublevel-text-color-active: '#ffffff'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#404141'                  # granite
+      sublevel-text-color-active: '#404141'
       sublevel-background: '#000000'
-      sublevel-background-active: '#F6B09D' #rosy cheeks
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#FFFFFF'           # Cloudy - Main Menu Background
+      text-color: '#404141'           # Granite
+      activemenu-color: '#F08050'     # Sunset
+      font-size: '15px'
+      submenu-color: '#FFFFFF'        # Cloudy - Submenu background
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#404141' # Granite - Links etc
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
     font:
       family-default: 'Assistant'
-    accent:
-      color-1: '#F08050' # Sunset
-      color-2: '#F6B09D' # Rosy Cheeks
     header:
       background: '#f2f2f2'
       text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+preset3:
+  image: 'gantry-admin://images/ramblers-mintcake-white.png'
+  description: Mintcake & White
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#9BC8AB'       #mintcake
+    - '#FFFFFF'       #white
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # white
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # white
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#ffffff'                  # white
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
     navigation:
-      background: '#9BC8AB' # Mintcake
-      text-color: '#000000' # Black
-      activemenu-color: '#F08050' # Sunset
-      font-size: '1rem'
-      submenu-color: '#F08050'    # Sunset
+      background: '#9BC8AB'           # Mintcake
+      text-color: '#ffffff'           # white
+      activemenu-color: '##404141'    # Granite
+      font-size: '15px'
+      submenu-color: '#9BC8AB'        # Mintcake
       overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#9BC8AB' # Mintcake
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+preset4:
+  image: 'gantry-admin://images/ramblers-mintcake-granite.png'
+  description: Mintcake & Granite
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#9BC8AB'       #mintcake
+    - '#404141'       #granite
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#9BC8AB'           # Mintcake
+      text-color: '#404141'           # Granite
+      activemenu-color: '#FFFFFF'     # White
+      font-size: '15px'
+      submenu-color: '#9BC8AB'        # Mintcake
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#9BC8AB' # Mintcake
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+preset5:
+  image: 'gantry-admin://images/ramblers-rosycheeks-white.png'
+  description: RosyCheeks & White
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#F6B09D'       #rosycheeks
+    - '#FFFFFF'       #white
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#F6B09D'           # RosyCheeks
+      text-color: '#FFFFFF'           # White
+      activemenu-color: '#404141'     # Granite
+      font-size: '15px'
+      submenu-color: '#F6B09D'        # RosyCheeks
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#F6B09D' # RosyCheeks
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+preset6:
+  image: 'gantry-admin://images/ramblers-rosycheeks-granite.png'
+  description: RosyCheeks & Granite
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#F6B09D'       #rosycheeks
+    - '#404141'       #granite
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#F6B09D'           # RosyCheeks
+      text-color: '#404141'           # Granite
+      activemenu-color: '#FFFFFF'     # white
+      font-size: '15px'
+      submenu-color: '#F6B09D'        # RosyCheeks
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#F6B09D' # Rosycheeks
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+preset7:
+  image: 'gantry-admin://images/ramblers-sunset-white.png'
+  description: Sunset & White
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#F08050'       #sunset
+    - '#FFFFFF'       #white
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#F08050'           # sunset
+      text-color: '#FFFFFF'           # white
+      activemenu-color: '#404141'     # Granite
+      font-size: '15px'
+      submenu-color: '#F08050'        # Sunset
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#F08050' # Sunset
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+preset8:
+  image: 'gantry-admin://images/ramblers-sunset-granite.png'
+  description: Sunset & Granite
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#F08050'       #sunset
+    - '#404141'       #granite
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#F08050'           # Sunset
+      text-color: '#404141'           # Granite
+      activemenu-color: '#FFFFFF'     # white
+      font-size: '15px'
+      submenu-color: '#F08050'        # Sunset
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#F08050' # Sunset
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
     showcase:
       background: '#f2f2f2'
       text-color: '#666666'
@@ -104,49 +845,60 @@ preset1:
       large-mobile-container: 30rem
       mobile-menu-breakpoint: 51rem
 
-preset2:
-  image: 'gantry-admin://images/ramblers-granite-sunset.png'
-  description: Granite & Sunset
+preset9:
+  image: 'gantry-admin://images/ramblers-sunrise-white.png'
+  description: Sunrise & White
   colors:
-    - '#404141'
-    - '#F08050'
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#F9B104'       #sunrise
+    - '#FFFFFF'       #white
 
   styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#F9B104'           # Sunrise
+      text-color: '#FFFFFF'           # White
+      activemenu-color: '#404141'     # Granite
+      font-size: '15px'
+      submenu-color: '#F9B104'        # Sunrise
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#F9B104' # Sunrise
+      color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
       text-color: '#666666'
     drawer:
       background: '#ffffff'
       text-color: '#666666'
-    base:
-      background: '#f2f2f2'   # Off white
-      text-color: '#666666'
-      body-font: 'family=Assistant'
-      heading-font: 'family=Assistant:700'
-    menustyle:
-      text-color: '#ffffff'
-      text-color-alt: '#8e9dab'
-      text-color-active: 'rgba(255,255,255, 0.7)'
-      background-active: '#F6B09D' # rosy cheeks
-      sublevel-text-color: '#ffffff'
-      sublevel-text-color-active: '#ffffff'
-      sublevel-background: '#000000'
-      sublevel-background-active: '#F6B09D' #rosy cheeks
     font:
       family-default: 'Assistant'
-    accent:
-      color-1: '#439a86' # Mintcake
-      color-2: '#F9B104' # Sunrise
     header:
       background: '#f2f2f2'
       text-color: '#666666'
-    navigation:
-      background: '#404141' # Granite
-      text-color: '#ffffff'
-      font-size: '1rem'
-      activemenu-color: '#439a86' # Mintcake
-      submenu-color: '#439a86'    # Mintcake
-      overlay: 'rgba(0, 0, 0, 0.4)'
     showcase:
       background: '#f2f2f2'
       text-color: '#666666'
@@ -177,7 +929,654 @@ preset2:
     bottom:
       background: '#f2f2f2'
       text-color: '#666666'
-      image: ''
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+
+preset10:
+  image: 'gantry-admin://images/ramblers-sunrise-granite.png'
+  description: Sunrise & Granite
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#F9B104'       #sunrise
+    - '#404141'       #granite
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#F9B104'           # Sunrise
+      text-color: '#404141'            # Granite
+      activemenu-color: '#FFFFFF'     # White
+      font-size: '15px'
+      submenu-color: '#F9B104'        # Sunrise
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#F9B104' # Sunrise
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+
+preset11:
+  image: 'gantry-admin://images/ramblers-mintcake-sunset-white.png'
+  description: Mintcake, Sunset & White
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#9BC8AB'       #mintcake
+    - '#F08050'       #sunset
+    - '#FFFFFF'       #white
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#9BC8AB'           # Mintcake
+      text-color: '#FFFFFF'            # White
+      activemenu-color: '#404141'     # Granite
+      font-size: '15px'
+      submenu-color: '#F08050'        # Sunset
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#F08050' # Sunset      
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+
+preset12:
+  image: 'gantry-admin://images/ramblers-mintcake-sunset-granite.png'
+  description: Mintcake, Sunset & Granite
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#9BC8AB'       #mintcake
+    - '#F08050'       #sunset
+    - '#404141'       #granite
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#9BC8AB'           # Mintcake
+      text-color: '#404141'            # Granite
+      activemenu-color: '#FFFFFF'     # White
+      font-size: '15px'
+      submenu-color: '#F08050'        # Sunset
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#F08050' # Sunset      
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+
+preset13:
+  image: 'gantry-admin://images/ramblers-sunset-mintcake-white.png'
+  description: Sunset, Mintcake & White
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#F08050'       #sunset
+    - '#9BC8AB'       #Mintcake
+    - '#FFFFFF'       #White
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#F08050'           # Sunset
+      text-color: '#FFFFFF'            # White
+      activemenu-color: '#404141'     # Granite
+      font-size: '15px'
+      submenu-color: '#9BC8AB'        # Mintcake
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#9BC8AB' # Mintcake
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+
+preset14:
+  image: 'gantry-admin://images/ramblers-sunset-mintcake-granite.png'
+  description: Sunset, Mintcake & Granite
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#F08050'       #sunset
+    - '#9BC8AB'       #Mintcake
+    - '#404141'       #Granite
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#F08050'           # Sunset
+      text-color: '#404141'            # White
+      activemenu-color: '#FFFFFF'     # white
+      font-size: '15px'
+      submenu-color: '#9BC8AB'        # Mintcake
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#9BC8AB' # Mintcake
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
+    copyright:
+      background: '#404141' # Granite
+      text-color: '#ffffff'
+    debug:
+      background: '#ffffff'
+      text-color: '#666666'
+    analytics:
+      background: '#ffffff'
+      text-color: '#666666'
+    footer:
+      background: '#404141' # Granite
+      text-color: '#ffffff' # White
+    offcanvas:
+      background: '#354d59'
+      text-color: '#ffffff'
+    breakpoints:
+      large-desktop-container: 95rem
+      desktop-container: 75rem
+      tablet-container: 51rem
+      large-mobile-container: 30rem
+      mobile-menu-breakpoint: 51rem
+
+preset15:
+  image: 'gantry-admin://images/ramblers-granite-mintcake-white.png'
+  description: Granite, Mintcake & White
+  colors:
+    # mintCake:       #9BC8AB;
+    # sunset:         #F08050;
+    # granite:        #404141;
+    # rosyCheeks:     #F6B09D;
+    # sunrise:        #F9B104;
+    # cloudy:         #FFFFFF;
+    # mintcakedark:   #ABD8BB;
+    # cancelled:      #C60C30;
+    # lightgrey:      #C0C0C0;
+    # midgrey:        #808080;
+    - '#404141'       #Granite
+    - '#9BC8AB'       #Mintcake
+    - '#FFFFFF'       #White
+
+  styles:
+    base:
+      background: '#f2f2f2'   # Off white
+      text-color: '#666666'
+      body-font: 'family=Assistant'
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
+    menustyle:
+      text-color: '#ffffff'                           # black
+      text-color-alt: '#8e9dab'
+      text-color-active: 'rgba(255,255,255, 0.7)'
+      background-active: '#F6B09D'                    # rosy cheeks
+      sublevel-text-color: '#ffffff'                  # black
+      sublevel-text-color-active: '#ffffff'
+      sublevel-background: '#000000'
+      sublevel-background-active: '#F6B09D'           #rosy cheeks
+    navigation:
+      background: '#404141'           # Granite
+      text-color: '#FFFFFF'            # White
+      activemenu-color: '#F08050'     # Sunset
+      font-size: '15px'
+      submenu-color: '#9BC8AB'        # Mintcake
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    accent:
+      color-1: '#9BC8AB' # Mintcake
+      color-2: '#F6B09D' # Rosy Cheeks
+    top:
+      background: '#ffffff'
+      text-color: '#666666'
+    drawer:
+      background: '#ffffff'
+      text-color: '#666666'
+    font:
+      family-default: 'Assistant'
+    header:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    showcase:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    feature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    subfeature:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    maintop:
+      background: '#f0f0f0'
+      text-color: '#666666'
+    utility:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    fullwidth:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    main:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    mainbottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    extension:
+      background: '#f2f2f2'
+      text-color: '#666666'
+    bottom:
+      background: '#f2f2f2'
+      text-color: '#666666'
+      bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
