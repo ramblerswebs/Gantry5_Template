@@ -244,7 +244,7 @@ preset3:
     navigation:
       background: '#9BC8AB'           # Mintcake
       text-color: '#ffffff'           # white
-      activemenu-color: '##404141'    # Granite
+      activemenu-color: '#404141'     # Granite
       font-size: '15px'
       submenu-color: '#9BC8AB'        # Mintcake
       overlay: 'rgba(0, 0, 0, 0.4)'
