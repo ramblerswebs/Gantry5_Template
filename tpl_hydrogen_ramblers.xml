@@ -15,7 +15,6 @@
 	<fileset>
 		<files folder="templates/g5_hydrogen/admin/images" target="templates/g5_hydrogen/admin/images">
 			<file>ramblers-cloudy.png</file>
-			<file>ramblers-granite-mintcake-granite.png</file>
 			<file>ramblers-granite-mintcake-white.png</file>
 			<file>ramblers-granite.png</file>
 			<file>ramblers-mintcake-white.png</file>
