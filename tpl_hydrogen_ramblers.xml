@@ -14,9 +14,24 @@
     <scriptfile>install.php</scriptfile>
 	<fileset>
 		<files folder="templates/g5_hydrogen/admin/images" target="templates/g5_hydrogen/admin/images">
-			<file>ramblers-granite-sunset.png</file>
-			<file>ramblers-mintcake-sunset.png</file>
+			<file>ramblers-cloudy.png</file>
+			<file>ramblers-granite-mintcake-granite.png</file>
+			<file>ramblers-granite-mintcake-white.png</file>
+			<file>ramblers-granite.png</file>
+			<file>ramblers-mintcake-white.png</file>
+			<file>ramblers-mintcake-granite.png</file>
+			<file>ramblers-mintcake-sunset-granite.png</file>
+			<file>ramblers-mintcake-sunset-white.png</file>
+			<file>ramblers-rosycheeks-granite.png</file>
+			<file>ramblers-rosycheeks-white.png</file>
+			<file>ramblers-sunrise-granite.png</file>
+			<file>ramblers-sunrise-white.png</file>
+			<file>ramblers-sunset-white.png</file>
+			<file>ramblers-sunset-granite.png</file>
+			<file>ramblers-sunset-mintcake-granite.png</file>
+			<file>ramblers-sunset-mintcake-white.png</file>
 		</files>
+	
 		<files folder="templates/g5_hydrogen/custom" target="templates/g5_hydrogen/custom">
 			<folder>blueprints</folder>
 			<folder>engine</folder>
