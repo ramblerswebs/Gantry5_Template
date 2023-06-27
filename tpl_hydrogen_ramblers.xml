@@ -10,7 +10,7 @@
 	<homepage></homepage>
 	<authorEmail>webmaster@wiltsswindonramblers.org.uk</authorEmail>
 	<authorUrl></authorUrl>
-	<version>1.0.18</version>
+	<version>1.0.19</version>
     <scriptfile>install.php</scriptfile>
 	<fileset>
 		<files folder="templates/g5_hydrogen/admin/images" target="templates/g5_hydrogen/admin/images">
