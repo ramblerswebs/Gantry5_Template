@@ -18,6 +18,8 @@ use Joomla\CMS\Language\Text;
 use Joomla\CMS\Installer\InstallerAdapter;
 use Joomla\Filesystem\File;
 use Joomla\Filesystem\Folder;
+use RocketTheme\Toolbox\File\YamlFile;
+
 
 /**
  * Gantry 5 Nucleus installer script.
@@ -104,13 +106,13 @@ class tpl_hydrogen_ramblersInstallerScript
                 foreach ($this->templatefiles as $file)
                 {
                     $file->load();
-                    $file->compare();
+                    $file->update();
                     $file->write();
-                    $file->tidy();
+                    $file->restore();
                 }
 
                 //echo $installer->render('install.html.twig');
-                echo "Hello";
+                echo "Settings have been merged";
 
             } catch (Exception $e) {
                 $app = Factory::getApplication();
@@ -118,7 +120,7 @@ class tpl_hydrogen_ramblersInstallerScript
             }
         } else {
             //echo $installer->render('update.html.twig');
-            echo "Hello 2";
+            echo "No settings have been merged";
         }
 
         //$installer->finalize();
@@ -128,61 +130,119 @@ class tpl_hydrogen_ramblersInstallerScript
 
     public function initialise_files()
     {
-        $this->templatefiles[0] = new LayoutFile('/layouts/Ramblers.yaml', '/layout.yaml');
-        $this->templatefiles[1] = new StyleFile('/gantry/presets.yaml', '/styles.yaml');
+        $this->templatefiles[0] = new StyleFile('/gantry/presets.yaml', '/styles.yaml');
+        // $this->templatefiles[1] = new LayoutFile('/layouts/Ramblers.yaml', '/layout.yaml');
     }
 }
 abstract class TemplateFile
 {
-    public $original ;
-    public $fpbackup ;
-    public $fporiginal ;
-    public $template ;
+    public $file_name;
+
+    public $masterfile_name;
+    public $masterfile;
+    public $masterfile_content;
+
+    public $backpfile_name;
+    public $backupfile;
+    public $backupfile_content;
+    const BACKUP_EXT = ".backup";
+
     public $customFolder = JPATH_SITE . "/templates/g5_hydrogen/custom";
-    public $config_files = array();
-    public $orginal_lines = array();
-    public $updated_lines = array();
+
+    public $configfiles = array();
+    public $configfiles_name = array();
+    public $configfiles_value = array();
 
 
     public function __construct($file_orig, $config_file)
     {
-        $this->original = $file_orig;
-        $this->fpbackup = $this->customFolder . $this->original . ".backup";
-        $this->fporiginal = $this->customFolder . $this->original ;
+        $this->file_name = $file_orig;
+        $this->masterfile_name = $this->customFolder . $this->file_name ;
+        $this->backupfile_name = $this->customFolder . $this->file_name . self::BACKUP_EXT;
         // Get the Template Id's to verify
         $Ids = $this->getTemplateIds();
         foreach ($Ids as $id)
         {
-            $this->config_files[$id->id] = $this->customFolder . "/config/" . $id->id . $config_file ;
+            $this->configfiles_name[$id->id] = $this->customFolder . "/config/" . $id->id . $config_file ;
         }
     }
     
     public function backup() {
         // Now move the files.
-        copy ($this->fporiginal, $this->fpbackup);
+        copy ($this->masterfile_name, $this->backupfile_name);
+
+        // backup each of the config files. 
+        foreach($this->configfiles_name as $file)
+        {
+            // Backup each config file
+            copy ($file, $file . self::BACKUP_EXT);
+        }
     }
 
     public function archive() {
         // Archives the backup file based on the date/time
+        $date = date('Ymdhis', time());
+        // Rename the backup file name using the date/time.
+        rename($this->backupfile_name, $this->masterfile_name . "." . $date);
+        // now we need to deal with each config file
+        foreach($this->configfiles_name as $file)
+        {
+            // Backup each config file
+            rename ($file . self::BACKUP_EXT, $file . "." . $date);
+        }
     }
 
     public function load() {
         // Loads the files into memory so that we can process the files.
         // The old, new and template files will be loaded
-        $this->original_lines = file($this->fpbackup);
-        $this->updated_lines = file($this->fporiginal);
+        $this->backupfile = YamlFile::instance($this->backupfile_name);
+        $this->backupfile_content = $this->backupfile->content();
+
+        $this->masterfile = YamlFile::instance($this->masterfile_name);
+        $this->masterfile_content = $this->masterfile->content();
+
+        // Load each of the configured values 
+        foreach($this->configfiles_name as $key => $file)
+        {
+            // Backup each config file
+            $this->configfiles[$key] = YamlFile::instance($file);
+            $this->configfiles_value[$key] = $this->configfiles[$key]->content();
+        }
+
     }
 
     public function write() {
         // Write the updated file back out to the system.
         // This should be with any updates
+        // Note we are only updating the configured values, not the template values.
+        foreach($this->configfiles_name as $key => $file)
+        {
+            // Backup each config file
+            $yfile = YamlFile::instance($file . ".new");
+            $yfile->save($this->configfiles_value[$key]);
+            $yfile->free();
+        }
+
+
 
     }
-    public function tidy() {
-        //$date = date('Ymdhis', time());
+    public function restore() {
 
         // Remove any files no longer wanted.
-        unlink($this->fpbackup);
+        unlink($this->masterfile_name);  // Remove the updated file
+
+        // rename the backup to be the original.
+        rename($this->backupfile_name, $this->masterfile_name);
+
+        // Re-instate each of the backup config files.
+        foreach($this->configfiles_name as $file)
+        {
+            // Remoove the updated config
+            unlink ($file);
+            // Move the backup to the original file
+            rename ($file . self::BACKUP_EXT, $file);
+        }
+
     }
 
     private function getTemplateIds()
@@ -201,24 +261,83 @@ abstract class TemplateFile
         return $results ;
     }
 
-    abstract function compare() ;
+    abstract function update() ;
         // This function compares the old and new files which have been loaded into memory.
     
 
 }
 class LayoutFile extends TemplateFile
 {
-    public function compare() {
+    public function update() {
 
     }
 }
 
 class StyleFile extends TemplateFile
 {
-    public function compare() {
-
-    }
-    public function load() {
-        parent::load();
+    public function update() {
+        // We need to update for each config file
+        foreach($this->configfiles_value as $templateid => $configdetail)
+        {
+            $preset = $configdetail["preset"];
+            // We now know the preset we are working with, So compare the master and the backup file for differences
+            // Looking to find where values have been added or removed.
+            if (array_key_exists($preset, $this->masterfile_content) && array_key_exists($preset, $this->backupfile_content))
+            {
+                // So the preset exists in the master and backup file.
+                // Now iterate the preset styles (e.g. base, menustyle, navigation)
+                foreach($this->masterfile_content[$preset]["styles"] as $stylename => $stylevalues)
+                {
+                    // Check the stylename exist in the backup.
+                    // E.g. base, menustyle, navigation
+                    if (array_key_exists($stylename, $this->backupfile_content[$preset]["styles"]))
+                    {
+                        // Style exists in the backup (and the master)
+                        // Now check each section within the style
+                        foreach ($stylevalues as $key => $value)
+                        { 
+                            // Check the entry actually exists
+                            if (array_key_exists($key, $this->backupfile_content[$preset]["styles"][$stylename]))
+                            {
+                                // Now check to see if the value needs to be updated
+                                $backupvalue = $this->backupfile_content[$preset]["styles"][$stylename][$key];
+                                if ($value != $backupvalue)
+                                {
+                                    // This value has been updated, so we need to consider changing it.
+                                    // But only update if the configured value matches the backup value.
+                                    $configvalue = $configdetail[$stylename][$key];
+                                    if ($backupvalue == $configvalue)
+                                    {
+                                        // Update the config value is this matches the original preset value
+                                        $this->configfiles_value[$templateid][$stylename][$key] = $value;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                // The value entry does not exist within this section
+                                // So add the value
+                                $this->configfiles_value[$templateid][$stylename][$key] = $value;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        // Style section does not exist (this is a new style)
+                        // This is a new section, we need to add the whole section
+                        foreach ($stylevalues as $key => $value)
+                        { 
+                            $this->configfiles_value[$templateid][$stylename][$key] = $value;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                // The chosen preset does not exist in either the master or backp. 
+                // So either we have removed the preset they have chosen >> Do Nothing
+                // Or they have selected a preset before we made it available >>> How??
+            }
+        }
     }
 }
