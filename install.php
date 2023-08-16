@@ -197,9 +197,11 @@ abstract class TemplateFile
         // The old, new and template files will be loaded
         $this->backupfile = YamlFile::instance($this->backupfile_name);
         $this->backupfile_content = $this->backupfile->content();
+        $this->backupfile->free();
 
         $this->masterfile = YamlFile::instance($this->masterfile_name);
         $this->masterfile_content = $this->masterfile->content();
+        $this->masterfile->free();
 
         // Load each of the configured values 
         foreach($this->configfiles_name as $key => $file)
@@ -207,6 +209,7 @@ abstract class TemplateFile
             // Backup each config file
             $this->configfiles[$key] = YamlFile::instance($file);
             $this->configfiles_value[$key] = $this->configfiles[$key]->content();
+            $this->configfiles[$key]->free();
         }
 
     }
@@ -280,64 +283,124 @@ class StyleFile extends TemplateFile
         foreach($this->configfiles_value as $templateid => $configdetail)
         {
             $preset = $configdetail["preset"];
-            // We now know the preset we are working with, So compare the master and the backup file for differences
-            // Looking to find where values have been added or removed.
-            if (array_key_exists($preset, $this->masterfile_content) && array_key_exists($preset, $this->backupfile_content))
+            // First remove any presets which are not within the template file
+            $this->remove_presets($templateid, $preset, $configdetail);
+
+            // Now add / update any preset values
+            $this->add_update_presets($templateid, $preset, $configdetail);
+        }
+    }
+
+    function remove_presets($templateid, $preset, $configdetail)
+    {
+        $items = array();
+        // Iterate each value and check to see 
+        foreach ($configdetail as $sectionname => $section)
+        {
+            // if it is an array we need to check the values. 
+            if (is_array($section))
             {
-                // So the preset exists in the master and backup file.
-                // Now iterate the preset styles (e.g. base, menustyle, navigation)
-                foreach($this->masterfile_content[$preset]["styles"] as $stylename => $stylevalues)
+                foreach ($section as $key => $value)
                 {
-                    // Check the stylename exist in the backup.
-                    // E.g. base, menustyle, navigation
-                    if (array_key_exists($stylename, $this->backupfile_content[$preset]["styles"]))
+                    // Check to see if the key exists in the main file
+                    if (!array_key_exists($key, $this->masterfile_content[$preset]['styles'][$sectionname]))
                     {
-                        // Style exists in the backup (and the master)
-                        // Now check each section within the style
-                        foreach ($stylevalues as $key => $value)
-                        { 
-                            // Check the entry actually exists
-                            if (array_key_exists($key, $this->backupfile_content[$preset]["styles"][$stylename]))
+                        // This does not exist within the master file so it needs to be removed
+                        $detail = $templateid . "," . $sectionname . "," . $key;
+                        array_push($items, $detail);
+                        // Cannot remove while we are iterating, so store and do at the end.
+                    }
+                }
+            }
+        }
+
+        // Now iterate the items
+        foreach ($items as $value)
+        {
+            $parts = explode("," , $value);
+            $preset = $parts[0];
+            $section = $parts[1];
+            $key = $parts[2];
+
+            unset($this->configfiles_value[$preset][$section][$key]);
+        }
+    }
+
+    function add_update_presets($templateid, $preset, $configdetail) {
+        // We now know the preset we are working with, So compare the master and the backup file for differences
+        // Looking to find where values have been added or removed.
+        if (array_key_exists($preset, $this->masterfile_content) && array_key_exists($preset, $this->backupfile_content))
+        {
+            // So the preset exists in the master and backup file.
+            // Now iterate the preset styles (e.g. base, menustyle, navigation)
+            foreach($this->masterfile_content[$preset]["styles"] as $stylename => $stylevalues)
+            {
+                // Check the stylename exist in the backup.
+                // E.g. base, menustyle, navigation
+                if (array_key_exists($stylename, $this->backupfile_content[$preset]["styles"]))
+                {
+                    // Style exists in the backup (and the master)
+                    // Now check each section within the style
+                    foreach ($stylevalues as $key => $value)
+                    { 
+                        // Check the entry actually exists
+                        if (array_key_exists($key, $this->backupfile_content[$preset]["styles"][$stylename]))
+                        {
+                            // Now check to see if the value needs to be updated
+                            $backupvalue = $this->backupfile_content[$preset]["styles"][$stylename][$key];
+                            // Only change if it has been updated in the preset.
+                            if ($value != $backupvalue)
                             {
-                                // Now check to see if the value needs to be updated
-                                $backupvalue = $this->backupfile_content[$preset]["styles"][$stylename][$key];
-                                if ($value != $backupvalue)
+                                // This value has been updated, so we need to consider changing it.
+                                // But only update if the configured value matches the backup value.
+                                $configvalue = $configdetail[$stylename][$key];
+                                if ($backupvalue == $configvalue)
                                 {
-                                    // This value has been updated, so we need to consider changing it.
-                                    // But only update if the configured value matches the backup value.
-                                    $configvalue = $configdetail[$stylename][$key];
-                                    if ($backupvalue == $configvalue)
-                                    {
-                                        // Update the config value is this matches the original preset value
-                                        $this->configfiles_value[$templateid][$stylename][$key] = $value;
-                                    }
+                                    // Update the config value is this matches the original preset value
+                                    $this->configfiles_value[$templateid][$stylename][$key] = $value;
                                 }
                             }
-                            else
-                            {
-                                // The value entry does not exist within this section
-                                // So add the value
-                                $this->configfiles_value[$templateid][$stylename][$key] = $value;
+                            else {
+                                $x = 1;
+                                if (array_key_exists($stylename, $this->configfiles_value[$templateid]))
+                                {
+                                    if (!array_key_exists($key, $this->configfiles_value[$templateid][$stylename]))
+                                    {
+                                            // Key does not exist so we need to add it.
+                                            $this->configfiles_value[$templateid][$stylename][$key] = $value;
+                                    }
+                                } 
+                                else
+                                {
+                                    // This is for a new section
+                                    $this->configfiles_value[$templateid][$stylename][$key] = $value;
+                                }
                             }
                         }
-                    }
-                    else
-                    {
-                        // Style section does not exist (this is a new style)
-                        // This is a new section, we need to add the whole section
-                        foreach ($stylevalues as $key => $value)
-                        { 
+                        else
+                        {
+                            // The value entry does not exist within this section
+                            // So add the value
                             $this->configfiles_value[$templateid][$stylename][$key] = $value;
                         }
                     }
                 }
+                else
+                {
+                    // Style section does not exist (this is a new style)
+                    // This is a new section, we need to add the whole section
+                    foreach ($stylevalues as $key => $value)
+                    { 
+                        $this->configfiles_value[$templateid][$stylename][$key] = $value;
+                    }
+                }
             }
-            else
-            {
-                // The chosen preset does not exist in either the master or backp. 
-                // So either we have removed the preset they have chosen >> Do Nothing
-                // Or they have selected a preset before we made it available >>> How??
-            }
+        }
+        else
+        {
+            // The chosen preset does not exist in either the master or backp. 
+            // So either we have removed the preset they have chosen >> Do Nothing
+            // Or they have selected a preset before we made it available >>> How??
         }
     }
 }
