@@ -71,6 +71,7 @@ preset1:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -176,6 +177,7 @@ preset2:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -282,6 +284,7 @@ preset3:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -388,6 +391,7 @@ preset4:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -494,6 +498,7 @@ preset5:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -600,6 +605,7 @@ preset6:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -706,6 +712,7 @@ preset7:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -812,6 +819,7 @@ preset8:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -919,6 +927,7 @@ preset9:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -1026,6 +1035,7 @@ preset10:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -1134,6 +1144,7 @@ preset11:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -1242,6 +1253,7 @@ preset12:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -1350,6 +1362,7 @@ preset13:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -1406,8 +1419,8 @@ preset14:
       background: '#f2f2f2'   # Off white
       text-color: '#666666'
       body-font: 'family=Assistant'
-      heading-font: 'family=Assistant:700'
-      font-size: '14px'   # Font Size for the Core pages
+      heading-font: 'family=Assistant:800'
+      font-size: '16px'   # Font Size for the Core pages
     menustyle:
       text-color: '#ffffff'                           # black
       text-color-alt: '#8e9dab'
@@ -1458,6 +1471,7 @@ preset14:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
@@ -1566,6 +1580,7 @@ preset15:
       text-color: '#666666'
     main:
       background: '#f2f2f2'
+      font-size: 15px
       text-color: '#666666'
     mainbottom:
       background: '#f2f2f2'
