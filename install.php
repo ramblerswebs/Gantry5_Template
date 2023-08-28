@@ -11,6 +11,8 @@
 defined('_JEXEC') or die;
 
 use Gantry\Framework\Gantry;
+use Gantry\Framework\Theme;
+use Gantry\Component\Layout\Layout;
 use Gantry\Framework\ThemeInstaller;
 use Gantry5\Loader;
 use Joomla\CMS\Factory;
@@ -56,7 +58,7 @@ class tpl_hydrogen_ramblersInstallerScript
                     // Setup all of the file details
                     $this->initialise_files();
 
-                    // backup each file
+                    // backup each file that we need to see the old version of.
                     foreach ($this->templatefiles as $file)
                     {
                         $file->backup();
@@ -93,22 +95,20 @@ class tpl_hydrogen_ramblersInstallerScript
             return true;
         }
 
-        //$installer = new ThemeInstaller($parent);
-        //$installer->initialize();
-
-        // Install sample data on first install.
+        // If we are doing an update, then merge updated configuration
         if (in_array($type, array('update'))) {
             try {
                 // Setup the file details
                 $this->initialise_files();
 
-                // backup each file
+                // Process each file type in turn
                 foreach ($this->templatefiles as $file)
                 {
                     $file->load();
                     $file->update();
                     $file->write();
-                    $file->restore();
+                    $file->compile();
+                    //$file->restore();
                 }
 
                 //echo $installer->render('install.html.twig');
@@ -123,15 +123,13 @@ class tpl_hydrogen_ramblersInstallerScript
             echo "No settings have been merged";
         }
 
-        //$installer->finalize();
-
         return true;
     }
 
     public function initialise_files()
     {
         $this->templatefiles[0] = new StyleFile('/gantry/presets.yaml', '/styles.yaml');
-        // $this->templatefiles[1] = new LayoutFile('/layouts/Ramblers.yaml', '/layout.yaml');
+        //$this->templatefiles[1] = new LayoutFile('/layouts/Ramblers.yaml', '/layout.yaml');
     }
 }
 abstract class TemplateFile
@@ -221,12 +219,17 @@ abstract class TemplateFile
         foreach($this->configfiles_name as $key => $file)
         {
             // Backup each config file
-            $yfile = YamlFile::instance($file . ".new");
+            //$yfile = YamlFile::instance($file . ".new");
+            $yfile = YamlFile::instance($file);
             $yfile->save($this->configfiles_value[$key]);
             $yfile->free();
         }
 
 
+
+    }
+    public function compile()
+    {
 
     }
     public function restore() {
@@ -248,7 +251,7 @@ abstract class TemplateFile
 
     }
 
-    private function getTemplateIds()
+    public function getTemplateIds()
     {
         // We are updating so fine the template id. 
         $db = JFactory::getDbo(); // Link to the db
@@ -271,6 +274,36 @@ abstract class TemplateFile
 }
 class LayoutFile extends TemplateFile
 {
+    public $layoutObject;
+
+    public function load()
+    {
+        $gantry = Gantry::instance();
+
+        /** @var Theme $theme */
+        //$theme = $gantry['theme'];
+
+        $name = '154' ;
+        if (!$name) {
+            try {
+                $name = static::gantry()['configuration'];
+            } catch (\Exception $e) {
+                throw new \LogicException('Gantry: Outline has not been defined yet', 500);
+            }
+        }
+
+        if (!isset($this->layoutObject) || $this->layoutObject->name !== $name) {
+            $layout = Layout::instance($name);
+
+            if (!$layout->exists()) {
+                $layout = Layout::instance('default');
+            }
+
+            // TODO: Optimize
+            $this->layoutObject = $layout->init();
+        }
+    }
+
     public function update() {
 
     }
@@ -278,6 +311,41 @@ class LayoutFile extends TemplateFile
 
 class StyleFile extends TemplateFile
 {
+    public function compile()
+    {
+        $templateName = "g5_hydrogen"; // This update is based on g5_hydrogen
+        $gantry = null;
+        if (!class_exists('Gantry5\Loader')) {
+            throw new RuntimeException(Text::_('GANTRY5_THEME_INSTALL_GANTRY'));
+        }
+    
+        // Setup Gantry 5 Framework or throw exception.
+        Loader::setup();
+    
+        // Get Gantry instance and return it.
+        $gantry = Gantry::instance();
+        if (!isset($gantry['theme.name'])) {
+            $gantry['theme.path'] = JPATH_ROOT . "/templates/{$templateName}";
+            $gantry['theme.name'] = $templateName;
+        }
+
+        // Only a single template can be loaded at any time.
+        if (!isset($gantry['theme']) && file_exists($gantry['theme.path'] . '/includes/theme.php')) {
+            include_once $gantry['theme.path'] . '/includes/theme.php';
+        }
+
+        // Get a reference to the theme loaded
+        $theme = new Theme($gantry['theme.path'],$gantry['theme.name']);
+
+//      Update each outline in turn. 
+        $Ids = $this->getTemplateIds();
+        foreach ($Ids as $value)
+        {
+            $outline = $value->id;
+            $theme->updateCss($outline !== 'default' ? [$outline => ucfirst($outline)] : null);
+        }
+    }
+
     public function update() {
         // We need to update for each config file
         foreach($this->configfiles_value as $templateid => $configdetail)
@@ -353,15 +421,23 @@ class StyleFile extends TemplateFile
                             {
                                 // This value has been updated, so we need to consider changing it.
                                 // But only update if the configured value matches the backup value.
-                                $configvalue = $configdetail[$stylename][$key];
-                                if ($backupvalue == $configvalue)
+                                if (array_key_exists($key, $this->configfiles_value[$templateid][$stylename]))
                                 {
-                                    // Update the config value is this matches the original preset value
-                                    $this->configfiles_value[$templateid][$stylename][$key] = $value;
+                                    // Value exists, check to see if it has changed.
+                                    $configvalue = $this->configfiles_value[$templateid][$stylename][$key];
+                                    if ($backupvalue == $configvalue)
+                                    {
+                                        // Update the config value is this matches the original preset value
+                                        $this->configfiles_value[$templateid][$stylename][$key] = $value;
+                                    }
+                                }
+                                else
+                                {
+                                        // The entry did not exist in the configuration, so we need to add it.
+                                        $this->configfiles_value[$templateid][$stylename][$key] = $value;
                                 }
                             }
                             else {
-                                $x = 1;
                                 if (array_key_exists($stylename, $this->configfiles_value[$templateid]))
                                 {
                                     if (!array_key_exists($key, $this->configfiles_value[$templateid][$stylename]))
