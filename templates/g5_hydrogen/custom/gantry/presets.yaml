@@ -1419,8 +1419,8 @@ preset14:
       background: '#f2f2f2'   # Off white
       text-color: '#666666'
       body-font: 'family=Assistant'
-      heading-font: 'family=Assistant:800'
-      font-size: '16px'   # Font Size for the Core pages
+      heading-font: 'family=Assistant:700'
+      font-size: '14px'   # Font Size for the Core pages
     menustyle:
       text-color: '#ffffff'                           # black
       text-color-alt: '#8e9dab'
