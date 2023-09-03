@@ -28,6 +28,9 @@ layout:
   /breadcrumb/:
     - position-breadcrumb
 
+  /system-messages/:
+    - system-messages
+
   /maintop/:
     - [position-maintop-a, position-maintop-b, position-maintop-c, position-maintop-d, position-maintop-e, position-maintop-f]
 
