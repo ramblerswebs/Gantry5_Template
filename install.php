@@ -12,6 +12,7 @@ defined('_JEXEC') or die;
 
 use Gantry\Framework\Gantry;
 use Gantry\Framework\Theme;
+use Gantry\Admin\Router;
 use Gantry\Component\Layout\Layout as LayoutObject;
 use Gantry\Component\Layout\LayoutReader;
 use Gantry\Framework\ThemeInstaller;
@@ -284,8 +285,24 @@ class LayoutFile extends TemplateFile
 
     public function update() {
         try {
-            include "/var/www/html/administrator/components/com_gantry5/gantry5.php";
-            include "/var/www/html/templates/g5_hydrogen/includes/gantry.php";    
+            // Initialise Gantry
+            //include "/var/www/html/administrator/components/com_gantry5/gantry5.php";
+
+            if (!defined('GANTRYADMIN_PATH')) {
+                define('GANTRYADMIN_PATH', JPATH_COMPONENT_ADMINISTRATOR);
+            }
+
+            Loader::setup();
+
+            $gantry = Gantry::instance();
+            $gantry['router'] = function ($c) {
+                return new Router($c); };
+
+            $router = $gantry['router'];
+            $router->boot();
+            $router->load();
+            
+            include "/var/www/html/templates/g5_hydrogen/includes/gantry.php";
         }
         catch (exception $e) {
             $z = 1;
@@ -308,7 +325,6 @@ class LayoutFile extends TemplateFile
         $outlines = parent::getTemplateIds();
         foreach ($outlines as $outline)
         {
-            //$filename = "/var/www/html/templates/g5_hydrogen/custom/config/154/layout.yaml";
             $filename = $locator("gantry-config://{$outline->id}/layout.yaml");        // Load the original layout
             $input = LayoutReader::read($filename);        
 
