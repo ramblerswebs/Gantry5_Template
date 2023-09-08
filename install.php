@@ -13,6 +13,7 @@ defined('_JEXEC') or die;
 use Gantry\Framework\Gantry;
 use Gantry\Framework\Theme;
 use Gantry\Component\Layout\Layout as LayoutObject;
+use Gantry\Component\Layout\LayoutReader;
 use Gantry\Framework\ThemeInstaller;
 use Gantry5\Loader;
 use Joomla\CMS\Factory;
@@ -277,77 +278,12 @@ abstract class TemplateFile
 }
 class LayoutFile extends TemplateFile
 {
-    public $layoutObject;
-
     public function load()
     {
- //       $gantry = Gantry::instance();
-
-        /** @var Theme $theme */
-        //$theme = $gantry['theme'];
-
-/*        $name = '154' ;
-        if (!$name) {
-            try {
-                $name = static::gantry()['configuration'];
-            } catch (\Exception $e) {
-                throw new \LogicException('Gantry: Outline has not been defined yet', 500);
-            }
-        }
-
-        if (!isset($this->layoutObject) || $this->layoutObject->name !== $name) {
-            $layout = Layout::instance($name);
-
-            if (!$layout->exists()) {
-                $layout = Layout::instance('default');
-            }
-
-            // TODO: Optimize
-            $this->layoutObject = $layout->init();
-        }
-        */
     }
 
-    private function initialize_gantry() {
-        $app = Factory::getApplication();
-        $user = $app->getIdentity();
-        
-        // ACL for Gantry admin access.
-        if (!$user || (
-            !$user->authorise('core.manage', 'com_gantry5')
-            && !$user->authorise('core.manage', 'com_templates')
-            // Editing particle module makes AJAX call to Gantry component, but has restricted access to json only.
-            && !($user->authorise('core.manage', 'com_modules') && strtolower($app->input->getCmd('format', 'html')) === 'json')
-        )) {
-            $app->enqueueMessage(Text::_('JERROR_ALERTNOAUTHOR'), 'error');
-        
-            return false;
-        }
-        
-        if (!defined('GANTRYADMIN_PATH')) {
-            define('GANTRYADMIN_PATH', JPATH_COMPONENT_ADMINISTRATOR);
-        }
-        
-        // Detect Gantry Framework or fail gracefully.
-        if (!class_exists('Gantry5\Loader')) {
-            $app->enqueueMessage(
-                Text::sprintf('COM_GANTRY5_PLUGIN_MISSING', Text::_('COM_GANTRY5')),
-                'error'
-            );
-            return;
-        }
-
-        Loader::setup();
-
-        $gantry = Gantry::instance();
-        $gantry['router'] = function ($c) {
-            return new Router($c);
-        };
-        $router = $gantry['router'];
-    }
     public function update() {
         try {
-            //initialize_gantry();
             include "/var/www/html/administrator/components/com_gantry5/gantry5.php";
             include "/var/www/html/templates/g5_hydrogen/includes/gantry.php";    
         }
@@ -356,26 +292,34 @@ class LayoutFile extends TemplateFile
             //throw new \RuntimeException("Failed to Load Gantry files");
         }
 
-        $id = "Ramblers";
-        $outline = "154";
+        $preset_name = "Ramblers";
 
-        $preset = LayoutObject::preset($id);
+        $preset = LayoutObject::preset($preset_name);
         if (!$preset) {
             throw new \RuntimeException('Preset not found', 404);
         }
 
-        // Load the original layout
-        $oldlayout = LayoutObject::load($outline);
+        $gantry = Gantry::instance();
 
-        // Create the new outline with the new preset
-        $layout = new LayoutObject($outline, $preset);
+        /** @var UniformResourceLocator $locator */
+        $locator = $gantry['locator'];
 
-        //$input = $this->request->post->getJson('layout');
-        $input = null;
-        $deleted = isset($input) ? $layout->clearSections()->copySections($input): [];
+        //$oldlayout = LayoutObject::load($outline);
+        $outlines = parent::getTemplateIds();
+        foreach ($outlines as $outline)
+        {
+            //$filename = "/var/www/html/templates/g5_hydrogen/custom/config/154/layout.yaml";
+            $filename = $locator("gantry-config://{$outline->id}/layout.yaml");        // Load the original layout
+            $input = LayoutReader::read($filename);        
 
-        // Save layout and its index.
-        //$layout->save()->saveIndex();
+            // Create the new outline with the new preset
+            $layout = new LayoutObject($outline->id, $preset);
+            $deleted = isset($input) ? $layout->copySections($input): [];
+            //$deleted = isset($input) ? $layout->clearSections()->copySections($input): [];
+
+            // Save layout and its index.
+            $layout->save()->saveIndex();
+        }
     }
 }
 
