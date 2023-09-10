@@ -325,8 +325,14 @@ class LayoutFile extends TemplateFile
         $outlines = parent::getTemplateIds();
         foreach ($outlines as $outline)
         {
+            // Load the current configuration
             $filename = $locator("gantry-config://{$outline->id}/layout.yaml");        // Load the original layout
             $input = LayoutReader::read($filename);        
+
+            // Load the old/backup configuration
+            $backup_filename = $locator("gantry-config://{$outline->id}/layout.yaml");        // Load the original layout
+            $backup_filename = $backup_filename . parent::BACKUP_EXT;
+            $backup_input = LayoutReader::read($backup_filename);        
 
             // Create the new outline with the new preset
             $layout = new LayoutObject($outline->id, $preset);

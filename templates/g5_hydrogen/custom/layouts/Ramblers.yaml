@@ -16,6 +16,9 @@ layout:
   /navigation/:
     - menu
 
+  /system-messages/:
+    - system-messages
+
   /showcase/:
     - [position-showcase-a , position-showcase-b , position-showcase-c , position-showcase-d , position-showcase-e, position-showcase-f]
 
@@ -27,9 +30,6 @@ layout:
 
   /breadcrumb/:
     - position-breadcrumb
-
-  /system-messages/:
-    - system-messages
 
   /maintop/:
     - [position-maintop-a, position-maintop-b, position-maintop-c, position-maintop-d, position-maintop-e, position-maintop-f]
