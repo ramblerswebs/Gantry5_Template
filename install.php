@@ -284,30 +284,25 @@ class LayoutFile extends TemplateFile
     }
 
     public function update() {
-        try {
-            // Initialise Gantry
-            //include "/var/www/html/administrator/components/com_gantry5/gantry5.php";
 
-            if (!defined('GANTRYADMIN_PATH')) {
-                define('GANTRYADMIN_PATH', JPATH_COMPONENT_ADMINISTRATOR);
-            }
+        // Initialise Gantry
+        //include "/var/www/html/administrator/components/com_gantry5/gantry5.php";
 
-            Loader::setup();
-
-            $gantry = Gantry::instance();
-            $gantry['router'] = function ($c) {
-                return new Router($c); };
-
-            $router = $gantry['router'];
-            $router->boot();
-            $router->load();
-            
-            include "/var/www/html/templates/g5_hydrogen/includes/gantry.php";
+        if (!defined('GANTRYADMIN_PATH')) {
+            define('GANTRYADMIN_PATH', JPATH_COMPONENT_ADMINISTRATOR);
         }
-        catch (exception $e) {
-            $z = 1;
-            //throw new \RuntimeException("Failed to Load Gantry files");
-        }
+
+        Loader::setup();
+
+        $gantry = Gantry::instance();
+        $gantry['router'] = function ($c) {
+            return new Router($c); };
+
+        $router = $gantry['router'];
+        $router->boot();
+        $router->load();
+        
+        include "/var/www/html/templates/g5_hydrogen/includes/gantry.php";
 
         $preset_name = "Ramblers";
 
@@ -327,8 +322,10 @@ class LayoutFile extends TemplateFile
         {
             // Load the current configuration
             $filename = $locator("gantry-config://{$outline->id}/layout.yaml");        // Load the original layout
-            $input = LayoutReader::read($filename);        
-
+            $input = LayoutReader::read($filename);   
+            unset($input["preset"]);
+            $this->setInheritance($input);
+            
             // Load the old/backup configuration
             $backup_filename = $locator("gantry-config://{$outline->id}/layout.yaml");        // Load the original layout
             $backup_filename = $backup_filename . parent::BACKUP_EXT;
@@ -336,11 +333,26 @@ class LayoutFile extends TemplateFile
 
             // Create the new outline with the new preset
             $layout = new LayoutObject($outline->id, $preset);
+
             $deleted = isset($input) ? $layout->copySections($input): [];
             //$deleted = isset($input) ? $layout->clearSections()->copySections($input): [];
 
             // Save layout and its index.
             $layout->save()->saveIndex();
+        }
+    }
+
+    protected function setInheritance($items)
+    {
+        foreach($items as $item)
+        {
+            if (isset($item->type) && ($item->type == 'section' || $item->type == 'offcanvas' || $item->type == 'atoms'))
+            {
+                $item->inherit = new stdClass();
+            }
+
+            // if this section has children, you need to cover those
+            if (isset($item->children)) $this->setInheritance($item->children);
         }
     }
 }
