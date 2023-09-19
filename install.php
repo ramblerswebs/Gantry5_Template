@@ -266,6 +266,11 @@ class LayoutFile extends TemplateFile
 {
     public function load()
     {
+        // Don't use the default
+    }
+    public function write()
+    {
+        // Don't use the default
     }
 
     public function update() {
@@ -388,12 +393,15 @@ class StyleFile extends TemplateFile
         // We need to update for each config file
         foreach($this->configfiles_value as $templateid => $configdetail)
         {
-            $preset = $configdetail["preset"];
-            // First remove any presets which are not within the template file
-            $this->remove_presets($templateid, $preset, $configdetail);
-
-            // Now add / update any preset values
-            $this->add_update_presets($templateid, $preset, $configdetail);
+            // If there is no preset value then they have not initialised this theme and hence nothing to compare with
+            if (isset($configdetail['preset'])) {
+                $preset = $configdetail["preset"];
+                // First remove any presets which are not within the template file
+                $this->remove_presets($templateid, $preset, $configdetail);
+    
+                // Now add / update any preset values
+                $this->add_update_presets($templateid, $preset, $configdetail);    
+            }
         }
     }
 
