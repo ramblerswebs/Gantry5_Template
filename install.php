@@ -247,13 +247,30 @@ abstract class TemplateFile
         $db = JFactory::getDbo(); // Link to the db
         $query = $db->getQuery(true); // Query reference
         // Define the query
-        $query->select($db->quoteName('id'));
+        $query->select($db->quoteName(array('id', 'params')));
         $query->from($db->quoteName('#__template_styles'));
         $query->where($db->quoteName('template') . "=" . $db->quote('g5_hydrogen'));
 
         $db->setQuery($query);
         $results = $db->loadObjectList();
 
+        // Iterate each template and check it has been updated with the Ramblers preset
+        foreach ($results as $key => $template)
+        {
+            $config = json_decode($template->params);
+            // If this does not use the Ramblers preset then remove it from the list.
+            if (isset($config->preset))
+            {
+                if ($config->preset != "Ramblers") unset ($results[$key]) ;
+            }
+            else
+            {
+                // Preset is not defined, so cannot assume to be Ramblers
+                unset ($results[$key]);
+            }
+        }
+
+        // Return detail of template styles to update
         return $results ;
     }
 
@@ -395,6 +412,7 @@ class StyleFile extends TemplateFile
         {
             // If there is no preset value then they have not initialised this theme and hence nothing to compare with
             if (isset($configdetail['preset'])) {
+                // Get the name of the preset which has been selected
                 $preset = $configdetail["preset"];
                 // First remove any presets which are not within the template file
                 $this->remove_presets($templateid, $preset, $configdetail);
