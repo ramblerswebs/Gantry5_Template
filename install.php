@@ -350,6 +350,11 @@ class LayoutFile extends TemplateFile
             {
                 $item->inherit = new stdClass();
             }
+            if (!isset($item->children))
+            {
+                // Default children to an empty array
+                $item->children = array();
+            }
 
             // if this section has children, you need to cover those
             if (isset($item->children)) $this->setInheritance($item->children);
