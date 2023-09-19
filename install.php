@@ -37,15 +37,15 @@ class tpl_hydrogen_ramblersInstallerScript
 
     public function preflight($type, $parent)
     {
-        if ($type === 'uninstall') {
-            return true;
-        }
-
-        $manifest = $parent->getManifest();
-        $name = Text::_($manifest->name);
-
-        // Prevent installation if Gantry 5 isn't enabled or is too old for this template.
         try {
+                if ($type === 'uninstall') {
+                return true;
+            }
+
+            $manifest = $parent->getManifest();
+            $name = Text::_($manifest->name);
+
+            // Prevent installation if Gantry 5 isn't enabled or is too old for this template.
             if (!class_exists('Gantry5\Loader')) {
                 throw new RuntimeException(sprintf('Please install Gantry 5 Framework before installing %s template!', $name));
             }
@@ -56,25 +56,22 @@ class tpl_hydrogen_ramblersInstallerScript
 
             // We need take a backup of the original configuration files, before they are updated. But only if this is an update
             if (in_array($type, array('update'))) {
-                try {
-                    // Setup all of the file details
-                    $this->initialise_files();
+                // Setup all of the file details
+                $this->initialise_files();
 
-                    // backup each file that we need to see the old version of.
-                    foreach ($this->templatefiles as $file)
-                    {
-                        $file->backup();
-                    }
-
-                } catch (Exception $e) {
-                    $app = Factory::getApplication();
-                    $app->enqueueMessage(Text::sprintf($e->getMessage()), 'error');
+                // backup each file that we need to see the old version of.
+                foreach ($this->templatefiles as $file)
+                {
+                    $file->backup();
                 }
+
             }
     
             if (!method_exists($gantry, 'isCompatible') || !$gantry->isCompatible($this->requiredGantryVersion)) {
                 throw new \RuntimeException(sprintf('Please upgrade Gantry 5 Framework to v%s (or later) before installing %s template!', strtoupper($this->requiredGantryVersion), $name));
             }
+
+            return true;
 
         } catch (Exception $e) {
             $app = Factory::getApplication();
@@ -82,51 +79,39 @@ class tpl_hydrogen_ramblersInstallerScript
 
             return false;
         }
-
-        return true;
     }
 
     /**
-     * @param string $type
      * @param object $parent
      * @throws Exception
      */
-    public function postflight($type, $parent)
+    public function update($parent)
     {
-        if ($type === 'uninstall') {
-            return true;
-        }
+        try {
+            // Setup the file details
+            $this->initialise_files();
 
-        // If we are doing an update, then merge updated configuration
-        if (in_array($type, array('update'))) {
-            try {
-                // Setup the file details
-                $this->initialise_files();
-
-                // Process each file type in turn
-                foreach ($this->templatefiles as $file)
-                {
-                    $file->load();
-                    $file->update();
-                    $file->write();
-                    $file->compile();
-                    //$file->restore();
-                }
-
-                //echo $installer->render('install.html.twig');
-                echo "Settings have been merged";
-
-            } catch (Exception $e) {
-                $app = Factory::getApplication();
-                $app->enqueueMessage(Text::sprintf($e->getMessage()), 'error');
-                return false;
+            // Process each file type in turn
+            foreach ($this->templatefiles as $file)
+            {
+                $file->load();
+                $file->update();
+                $file->write();
+                $file->compile();
+                //$file->restore();
             }
-        } else {
-            //echo $installer->render('update.html.twig');
-            echo "No settings have been merged";
-        }
 
-        return true;
+            //echo $installer->render('install.html.twig');
+            echo "Settings have been merged";
+    
+            return true;    
+        }
+        catch (exception $e)
+        {
+            $app = Factory::getApplication();
+            $app->enqueueMessage(Text::sprintf($e->getMessage()), 'error');
+            return false;
+        }
     }
 
     public function initialise_files()
@@ -177,8 +162,8 @@ abstract class TemplateFile
         // backup each of the config files. 
         foreach($this->configfiles_name as $file)
         {
-            // Backup each config file
-            copy ($file, $file . self::BACKUP_EXT);
+            // Backup each config file (if it exists)
+            if (file_exists($file)) copy ($file, $file . self::BACKUP_EXT);
         }
     }
 
@@ -186,12 +171,12 @@ abstract class TemplateFile
         // Archives the backup file based on the date/time
         $date = date('Ymdhis', time());
         // Rename the backup file name using the date/time.
-        rename($this->backupfile_name, $this->masterfile_name . "." . $date);
+        if (file_exists($this->backupfile_name)) rename($this->backupfile_name, $this->masterfile_name . "." . $date);
         // now we need to deal with each config file
         foreach($this->configfiles_name as $file)
         {
             // Backup each config file
-            rename ($file . self::BACKUP_EXT, $file . "." . $date);
+            if (file_exists($file . self::BACKUP_EXT)) rename ($file . self::BACKUP_EXT, $file . "." . $date);
         }
     }
 
@@ -240,18 +225,18 @@ abstract class TemplateFile
     public function restore() {
 
         // Remove any files no longer wanted.
-        unlink($this->masterfile_name);  // Remove the updated file
+        if (file_exists($this->masterfile_name)) unlink($this->masterfile_name);  // Remove the updated file
 
         // rename the backup to be the original.
-        rename($this->backupfile_name, $this->masterfile_name);
+        if (file_exists($this->backupfile_name)) rename($this->backupfile_name, $this->masterfile_name);
 
         // Re-instate each of the backup config files.
         foreach($this->configfiles_name as $file)
         {
             // Remoove the updated config
-            unlink ($file);
+            if (file_exists($file)) unlink ($file);
             // Move the backup to the original file
-            rename ($file . self::BACKUP_EXT, $file);
+            if (file_exists($file . self::BACKUP_EXT)) rename ($file . self::BACKUP_EXT, $file);
         }
 
     }
