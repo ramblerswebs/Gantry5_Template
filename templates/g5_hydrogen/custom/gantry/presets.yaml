@@ -17,7 +17,7 @@ preset1:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -42,55 +42,56 @@ preset1:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -122,7 +123,7 @@ preset2:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -147,55 +148,56 @@ preset2:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -228,7 +230,7 @@ preset3:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -253,55 +255,56 @@ preset3:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -334,7 +337,7 @@ preset4:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -359,55 +362,56 @@ preset4:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -440,7 +444,7 @@ preset5:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -465,55 +469,56 @@ preset5:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -546,7 +551,7 @@ preset6:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -571,55 +576,56 @@ preset6:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -652,7 +658,7 @@ preset7:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -677,55 +683,56 @@ preset7:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -758,7 +765,7 @@ preset8:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -783,55 +790,56 @@ preset8:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -865,7 +873,7 @@ preset9:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -890,55 +898,56 @@ preset9:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -972,7 +981,7 @@ preset10:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -997,55 +1006,56 @@ preset10:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -1080,7 +1090,7 @@ preset11:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -1105,55 +1115,56 @@ preset11:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -1188,7 +1199,7 @@ preset12:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -1213,55 +1224,56 @@ preset12:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -1296,7 +1308,7 @@ preset13:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -1321,55 +1333,56 @@ preset13:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -1404,7 +1417,7 @@ preset14:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -1429,55 +1442,56 @@ preset14:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
@@ -1512,7 +1526,7 @@ preset15:
   styles:
     base:
       background: '#f2f2f2'   # Off white
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
       font-size: '14px'   # Font Size for the Core pages
@@ -1537,55 +1551,56 @@ preset15:
       color-2: '#F6B09D' # Rosy Cheeks
     top:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     drawer:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     font:
       family-default: 'Assistant'
     header:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     showcase:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     feature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     subfeature:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     utility:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     fullwidth:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     main:
       background: '#f2f2f2'
-      text-color: '#666666'
+      font-size: 15px
+      text-color: '#1c1c1c'
     mainbottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     extension:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     bottom:
       background: '#f2f2f2'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
       bottom: ''
     copyright:
       background: '#404141' # Granite
       text-color: '#ffffff'
     debug:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     analytics:
       background: '#ffffff'
-      text-color: '#666666'
+      text-color: '#1c1c1c'
     footer:
       background: '#404141' # Granite
       text-color: '#ffffff' # White
