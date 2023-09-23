@@ -1,6 +1,11 @@
 /* Link buttons in RA colours */
 button.link-button,
 a.link-button,
+
+a[target='_blank']{
+    cursor: url("../images/newwindow.png"),pointer;
+ }
+
 .link-button a {
     color: #fff ;
     font-weight: bold;
