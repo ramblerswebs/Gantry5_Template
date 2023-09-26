@@ -309,7 +309,9 @@ class LayoutFile extends TemplateFile
         $router->boot();
         $router->load();
         
-        include "/var/www/html/templates/g5_hydrogen/includes/gantry.php";
+        $include_file = JPATH_ROOT . "/templates/g5_hydrogen/includes/gantry.php";
+
+        include $include_file;
 
         $preset_name = "Ramblers";
 
