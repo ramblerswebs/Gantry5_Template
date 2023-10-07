@@ -1,11 +1,9 @@
 /* Link buttons in RA colours */
-button.link-button,
-a.link-button,
-
 a[target='_blank']{
     cursor: url("../images/newwindow.png"),pointer;
  }
 
+ button.link-button,
 .link-button a {
     color: #fff ;
     font-weight: bold;
@@ -69,6 +67,9 @@ a[target='_blank']{
 }
 .link-button.cloudy{
     background-color: #EEEEEE ;
+    background-image: none;
+    color: var(--granite);
+    border-color: var(--granite);
 }
 
 .link-button.mintcake:hover {
