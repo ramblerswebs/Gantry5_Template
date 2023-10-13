@@ -19,6 +19,11 @@
     }
 }
 
+div.mod-custom {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 div.moduletable.ramod_full,
 div.moduletable.ramod_pantone0110,
 div.moduletable.ramod_pantone0159,
@@ -84,9 +89,13 @@ div.moduletable.ramod_heading7474
     width:94%;
 }
 
+div.ramod_outline p {
+    margin-left: 5px;
+    margin-right: 2px;
+}
 
 
-
+/*
 div.moduletable.ramod_full div,
 div.moduletable.ramod_heading div,
 div.moduletable.ramod_outline div,
@@ -121,6 +130,7 @@ div.moduletable.ramod_outline7474 div {
     margin-right: 5px;
     margin-bottom: 10px;
 }
+*/
 
 div.moduletable.ramod_full,
 div.moduletable.ramod_pantone0110,
