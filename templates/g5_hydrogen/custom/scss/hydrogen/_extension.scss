@@ -9,12 +9,20 @@
 	color: $extension-text-color;
 
 	a {
+		color: $accent-color-1;
+		font-weight: bold;
+		&:hover {
+			color: darken($accent-color-1, 10%);
+		}
+	}
+/*
+	a {
 		color: lighten($extension-background, 50%);
 		&:hover {
 			color: $extension-text-color;
 		}
 	}
-
+*/
 	h1, h2, h3, h4, h5, h6, strong {
 		color: $extension-text-color;
 	}
