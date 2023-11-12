@@ -15,9 +15,10 @@
 	color: $copyright-text-color;
 
 	a {
-		color: lighten($copyright-background, 50%);
+		color: $accent-color-1;
+		font-weight: bold;
 		&:hover {
-			color: $copyright-text-color;
+			color: darken($accent-color-1, 10%);
 		}
 	}
 

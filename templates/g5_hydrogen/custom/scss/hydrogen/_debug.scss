@@ -9,9 +9,10 @@
 	color: $debug-text-color;
 
 	a {
-		color: lighten($debug-background, 50%);
+		color: $accent-color-1;
+		font-weight: bold;
 		&:hover {
-			color: $debug-text-color;
+			color: darken($accent-color-1, 10%);
 		}
 	}
 

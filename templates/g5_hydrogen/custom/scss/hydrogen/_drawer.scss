@@ -10,9 +10,10 @@
 	color: $drawer-text-color;
 
 	a {
-		color: lighten($drawer-background, 50%);
+		color: $accent-color-1;
+		font-weight: bold;
 		&:hover {
-			color: $drawer-text-color;
+			color: darken($accent-color-1, 10%);
 		}
 	}
 

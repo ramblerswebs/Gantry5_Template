@@ -3,9 +3,10 @@
 	width: $offcanvas-width;
 	color: $offcanvas-text-color;
 	a {
-		color: lighten($offcanvas-background, 50%);
+		color: $accent-color-1;
+		font-weight: bold;
 		&:hover {
-			color: $offcanvas-text-color;
+			color: darken($accent-color-1, 10%);
 		}
 	}
 
