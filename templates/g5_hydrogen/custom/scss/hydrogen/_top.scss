@@ -10,9 +10,10 @@
 	color: $top-text-color;
 
 	a {
-		color: lighten($top-background, 50%);
+		color: $accent-color-1;
+		font-weight: bold;
 		&:hover {
-			color: $top-text-color;
+			color: darken($accent-color-1, 10%);
 		}
 	}
 

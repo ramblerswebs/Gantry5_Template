@@ -1,6 +1,11 @@
 /* format tables */
 table {
     border-collapse: separate;
+    border: 0px ;
+}
+
+td {
+	border: 0px solid lighten($base-border-color,5%); 
 }
 
 table.com-content-category__table {

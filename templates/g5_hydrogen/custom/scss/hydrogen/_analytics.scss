@@ -10,9 +10,10 @@
 	color: $analytics-text-color;
 
 	a {
-		color: lighten($analytics-background, 50%);
+		color: $accent-color-1;
+		font-weight: bold;
 		&:hover {
-			color: $analytics-text-color;
+			color: darken($accent-color-1, 10%);
 		}
 	}
 

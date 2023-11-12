@@ -11,9 +11,10 @@
 	
 
 	a {
-		color: lighten($header-background, 40%);
+		color: $accent-color-1;
+		font-weight: bold;
 		&:hover {
-			color: $header-text-color;
+			color: darken($accent-color-1, 10%);
 		}
 	}
 
