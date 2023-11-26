@@ -105,7 +105,8 @@
     } 
     .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active.g-selected > .g-menu-item-container
     {  
-        color: black; 
+        // This is the text color for the selected menu when highlighted (hovered over). 
+        color: $navigation-activemenu-color;
     } 
 
     .g-main-nav .g-toplevel > li:not(.g-menu-item-type-particle):not(.g-menu-item-type-module).active > .g-menu-item-container
