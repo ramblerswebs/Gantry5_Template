@@ -4,11 +4,6 @@ table {
     border: 0px ;
 }
 
-table.programme {
-    display: block ; 
-    overflow-x: auto;
-}
-
 td {
 	border: 0px solid lighten($base-border-color,5%); 
 }
