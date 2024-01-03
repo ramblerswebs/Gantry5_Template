@@ -610,3 +610,13 @@ div.mod-articlesnews {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+div.mod-custom {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    ul, ol, dl {
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    }   
+}
