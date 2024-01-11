@@ -372,6 +372,12 @@ div.moduletable.ramod_outline.lightgrey {
         background: $lightgrey;
     }
 }
+div.moduletable.ramod_outline.warning {
+    h2, h3 {
+        background: $warning;
+    }
+}
+
 
 
 div.moduletable.ramod_outline0110 {
