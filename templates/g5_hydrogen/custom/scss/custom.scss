@@ -49,6 +49,10 @@ div.nextwalk {
 
 p { margin: 0 0 15px 0 ;}
 
+p, a {
+    word-wrap: break-word ;
+}
+
 #g-main {
     padding: 0px;
 }
