@@ -16,7 +16,7 @@ preset1:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -49,38 +49,38 @@ preset1:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -122,7 +122,7 @@ preset2:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -155,38 +155,38 @@ preset2:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -229,7 +229,7 @@ preset3:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -262,38 +262,38 @@ preset3:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -336,7 +336,7 @@ preset4:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -369,38 +369,38 @@ preset4:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -443,7 +443,7 @@ preset5:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -476,38 +476,38 @@ preset5:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -550,7 +550,7 @@ preset6:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -583,38 +583,38 @@ preset6:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -657,7 +657,7 @@ preset7:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -690,38 +690,38 @@ preset7:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -764,7 +764,7 @@ preset8:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -797,38 +797,38 @@ preset8:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -872,7 +872,7 @@ preset9:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -905,38 +905,38 @@ preset9:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -980,7 +980,7 @@ preset10:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -1013,38 +1013,38 @@ preset10:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -1089,7 +1089,7 @@ preset11:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -1122,38 +1122,38 @@ preset11:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -1198,7 +1198,7 @@ preset12:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -1231,38 +1231,38 @@ preset12:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -1307,7 +1307,7 @@ preset13:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -1340,38 +1340,38 @@ preset13:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -1416,7 +1416,7 @@ preset14:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -1449,38 +1449,38 @@ preset14:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
@@ -1525,7 +1525,7 @@ preset15:
 
   styles:
     base:
-      background: '#f2f2f2'   # Off white
+      background: '#ffffff'   # Off white
       text-color: '#1c1c1c'
       body-font: 'family=Assistant'
       heading-font: 'family=Assistant:700'
@@ -1558,38 +1558,38 @@ preset15:
     font:
       family-default: 'Assistant'
     header:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     showcase:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     feature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     subfeature:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     maintop:
       background: '#f0f0f0'
       text-color: '#1c1c1c'
     utility:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     fullwidth:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     main:
-      background: '#f2f2f2'
+      background: '#ffffff'
       font-size: 15px
       text-color: '#1c1c1c'
     mainbottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     extension:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
     bottom:
-      background: '#f2f2f2'
+      background: '#ffffff'
       text-color: '#1c1c1c'
       bottom: ''
     copyright:
