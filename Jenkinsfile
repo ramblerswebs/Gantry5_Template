@@ -11,6 +11,9 @@ pipeline {
     }
     stage('Package Zip File') {
       steps {
+        // Remove the Jenkins File from the package
+        sh 'rm -f Jenkinsfile'
+
         // First Zip the contents
         sh 'zip -r tpl_hydrogen_ramblers.zip .'
       }
