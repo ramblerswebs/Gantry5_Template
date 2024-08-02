@@ -172,3 +172,8 @@ section#g-top {
     @include main-nav-colors($navigation-background, $navigation-text-color, $main-background, $main-text-color);
     color: $navigation-text-color;
 }
+
+.plg_system_webauthn_login_button svg {
+    width: 30px;
+    margin: 4px;
+    }
