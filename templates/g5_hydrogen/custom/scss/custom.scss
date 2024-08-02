@@ -49,6 +49,10 @@ div.nextwalk {
 
 p { margin: 0 0 15px 0 ;}
 
+p, a {
+    word-wrap: break-word ;
+}
+
 #g-main {
     padding: 0px;
 }
@@ -168,3 +172,8 @@ section#g-top {
     @include main-nav-colors($navigation-background, $navigation-text-color, $main-background, $main-text-color);
     color: $navigation-text-color;
 }
+
+.plg_system_webauthn_login_button svg {
+    width: 30px;
+    margin: 4px;
+    }

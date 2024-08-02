@@ -6,11 +6,14 @@ pipeline {
   stages {
     stage('Update version information') {
       steps {
-        sh 'python2 /home/UpdateJoomlaBuild -bx -i tpl_hydrogen_ramblers.xml'
+        sh 'python3 /home/UpdateJoomlaBuild -bx -i tpl_hydrogen_ramblers.xml'
       }
     }
     stage('Package Zip File') {
       steps {
+        // Remove the Jenkins File from the package
+        sh 'rm -f Jenkinsfile'
+
         // First Zip the contents
         sh 'zip -r tpl_hydrogen_ramblers.zip .'
       }
@@ -22,7 +25,7 @@ pipeline {
     	        sh 'rm -f *.zip'
     	      }
           }
-        sh 'python2 /home/UpdateJoomlaBuild -bx -i tpl_hydrogen_ramblers.xml -z tmp'    	  
+        sh 'python3 /home/UpdateJoomlaBuild -bx -i tpl_hydrogen_ramblers.xml -z tmp'    	  
         fileOperations([fileCopyOperation(excludes: '', flattenFiles: true, includes: 'tmp/*.zip', targetLocation: params.BINARY_STORE)])
     	}
     }
