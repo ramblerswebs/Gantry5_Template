@@ -31,11 +31,35 @@ form:
       description: Display reference to RamblersWebs hosting
       default: true
 
+    ramblerswebstarget:
+      type: select.selectize
+      label: Privacy Target
+      description: Target Browser Windows when Ramblers Webs link is clicked
+      placeholder: 'Select....'
+      default: _blank
+      options:
+        _blank: 'New Window'
+        _parent: 'Self'
+        _self: 'Same Frame'
+        _top: 'Full Window Body'
+
     ramblersprivacy:
       type: input.checkbox
       label: Ramblers Privacy
       description: Include Ramblers Privacy Policy
       default: true
+
+    ramblersprivacytarget:
+      type: select.selectize
+      label: Privacy Target
+      description: Target Browser Windows when Ramblers Privacy link is clicked
+      placeholder: 'Select....'
+      default: _blank
+      options:
+        _blank: 'New Window'
+        _parent: 'Self'
+        _self: 'Same Frame'
+        _top: 'Full Window Body'
 
     text:
       type: textarea.textarea
