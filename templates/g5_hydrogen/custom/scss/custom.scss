@@ -27,9 +27,10 @@
 @import "ramblers/icons";
 @import "ramblers/link";
 @import "ramblers/modules";
-@import "ramblers/tables";
 @import "ramblers/raheader";
 */
+@import "ramblers/tables";
+
 body {
     font-size: $main-font-size;
 }
@@ -44,12 +45,6 @@ h3 {
     font-size: 140%;
 }
 
-/*
-div.nextwalk {
-    margin-bottom: 5px;
-}
-*/
-
 p { margin: 0 0 15px 0 ;}
 
 p, a {
@@ -60,13 +55,6 @@ p, a {
     padding: 0px;
 }
 
-/*
-#g-top {
-    h1#ramblerstitle {
-        margin-top: 0px;
-    }
-}
-*/
 .g-offcanvas-toggle {
     color: $navigation-submenu-color;
 }
@@ -74,12 +62,7 @@ p, a {
 a:hover {
     text-decoration: underline;
 }
-/*
-.cancelled {
-    color:var(--cancelled);
-    text-decoration: line-through;
-}
-*/
+
 .preformat {
     background: none repeat scroll 0 0 #ffffd5;
     border-left: 5px solid #404040;
@@ -103,26 +86,13 @@ legend.hidelabeltxt {
 /* class to hide sections*/
 
 /*
-.ramblers-remove {
-    display: none;
-    padding: 0px;
-}
-*/
-/*
 @media only screen and (max-width: 768px){
     div#ramblersheader {
         background-image:none !important;
     }
 }
 */
-/*
-div.ra_fullwidth {
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: bottom;
-}
-*/
+
 /* enable RokNavMenu menu to be displayed */
 @media (max-width: 767px) {
     .gf-menu-device-container.responsive-type-panel ~ ul.gf-menu {
@@ -178,3 +148,32 @@ section#g-top {
     width: 30px;
     margin: 4px;
     }
+
+/*
+div.nextwalk {
+    margin-bottom: 5px;
+}
+
+#g-top {
+    h1#ramblerstitle {
+        margin-top: 0px;
+    }
+}
+
+.cancelled {
+    color:var(--cancelled);
+    text-decoration: line-through;
+}
+
+.ramblers-remove {
+    display: none;
+    padding: 0px;
+}
+
+div.ra_fullwidth {
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: bottom;
+}
+*/
