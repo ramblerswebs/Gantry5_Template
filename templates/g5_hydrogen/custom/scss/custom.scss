@@ -1,15 +1,15 @@
 /* Change log                                                            */
 /*                                                                      */
+
+/*
 :root {
-    /* Ramblers colours */
-    /* 2021  */
     --mintCake:#9BC8AB;
     --sunset:#F08050;
     --granite:#404141;
     --rosyCheeks:#F6B09D;
     --sunrise: #F9B104;
     --cloudy:#FFFFFF;
-    /* June 2017 -  */
+
     --pantone0110:#D7A900;
     --pantone0159:#C75B12;
     --pantone0186:#C60C30;           
@@ -20,6 +20,7 @@
     --pantone5565:#8BA69C;           
     --pantone7474:#007A87;           
 }
+*/
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap');
 @import "dependencies";
 /*
@@ -57,16 +58,18 @@ p, a {
     padding: 0px;
 }
 
+/*
 #g-top {
     h1#ramblerstitle {
         margin-top: 0px;
     }
 }
-
+*/
 .g-offcanvas-toggle {
     color: $navigation-submenu-color;
 }
 
+/*
 #rafooter {
     width: 100%;
     display: -webkit-flex;
@@ -74,15 +77,17 @@ p, a {
     display: flex;
     justify-content: space-between;
 }
+*/
+
 a:hover {
     text-decoration: underline;
 }
-
+/*
 .cancelled {
     color:var(--cancelled);
     text-decoration: line-through;
 }
-
+*/
 .preformat {
     background: none repeat scroll 0 0 #ffffd5;
     border-left: 5px solid #404040;
@@ -105,24 +110,27 @@ legend.hidelabeltxt {
 }
 /* class to hide sections*/
 
+/*
 .ramblers-remove {
     display: none;
     padding: 0px;
 }
-
+*/
+/*
 @media only screen and (max-width: 768px){
     div#ramblersheader {
         background-image:none !important;
     }
 }
-
+*/
+/*
 div.ra_fullwidth {
     background-size:100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-position: bottom;
 }
-
+*/
 /* enable RokNavMenu menu to be displayed */
 @media (max-width: 767px) {
     .gf-menu-device-container.responsive-type-panel ~ ul.gf-menu {
@@ -154,7 +162,7 @@ section#g-top {
         padding: 0px;
         margin: 0px;
     }
-
+/*
     h2#ramblerssubtitle {
         margin-top: 0px;
         margin-bottom: 0px;
@@ -165,6 +173,7 @@ section#g-top {
     div#ramblersheader {
         height: 100px ;
     }
+*/
 }
 
 .button
