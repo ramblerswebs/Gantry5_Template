@@ -48,6 +48,15 @@
 			}
 		}
 	}
+
+		/* This specific to the Gantry Particle */
+	#racopyright_particle {
+		width: 100%;
+		display: -webkit-flex;
+		-webkit-justify-content: space-between;
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 @media print {
